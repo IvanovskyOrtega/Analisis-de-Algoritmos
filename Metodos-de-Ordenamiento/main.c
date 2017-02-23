@@ -27,6 +27,7 @@ main( void )
             fscanf(numeros,"%d",&A[i]);
             i++;
         }
+	fclose(numeros);
 	uswtime(&utime0, &stime0, &wtime0);
 	burbuja(A, n);
 	uswtime(&utime1, &stime1, &wtime1);
