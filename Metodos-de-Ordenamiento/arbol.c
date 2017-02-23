@@ -15,25 +15,22 @@ aBB (int* A, int n)
 	  insertar (&miRaiz, clave);
     }
   A = inordenSecuencial (miRaiz, A);
-	return A;
+  return A;
 }
 
 int * 
-inordenSecuencial(struct nodo *Raiz, int* A)
+inordenSecuencial(struct nodo *Raiz, int *A)
 {
 	int i=0;
 	struct nodo *Cur, *Pre;
-
-	if(Raiz==NULL)
-		return A;
-
 	Cur = Raiz;
 	while(Cur != NULL)
 	{
 		if(Cur->Izq == NULL)
 		{
-			A[i]=Cur->dato;
+			A[i] =Cur->dato;
 			Cur= Cur->Der;
+			i++;
 		}
 		else
 		{
@@ -49,11 +46,11 @@ inordenSecuencial(struct nodo *Raiz, int* A)
 			else
 			{
 				Pre->Der = NULL;
-				A[i]=Cur->dato;
+				A[i] =Cur->dato;
 				Cur = Cur->Der;
+				i++;
 			}
 		}
-		i++;
 	}
 	return A;
 }
