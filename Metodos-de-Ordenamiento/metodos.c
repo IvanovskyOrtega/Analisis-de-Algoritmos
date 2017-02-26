@@ -103,25 +103,18 @@ seleccion(int *A, int n)
 int *
 shell(int *A, int n)
 {
-  int pos1=0;
-  int pos2=0;
-  int pos3=0;
-  int pivote=0;
-  for(pos1=n/2;pos1>=1;)
-  {
-    pos2=pos1;
-    while(pos2>=n)
-    {
-      pivote=A[pos2];
-      pos3=pos2-pos1;
-      while((pos3>=0)&&(A[pos3]>pivote))
-      {
-        A[pos3-pos1]=A[pos3];
-        pos3-=pos1;
-      }
-      A[pos3+pos1]=pivote;
-    }
-    pos1/=2;
+  int gap;
+  int i; 
+  int j;
+  int temp;
+  for (gap = n/2 ; gap > 0 ; gap /= 2) {
+     for (i = gap; i < n ; i++) {
+         for (j = i-gap ; j >= 0 && A[j] > A[j+gap] ; j -= gap) {
+             temp = A[j];
+             A[j] = A[j+gap];
+             A[j+gap] = temp;
+            }
+        }
   }
   return A;
 }
