@@ -18,9 +18,9 @@ main( void )
 	int i=0;
 	int* A = NULL;
 	int op;
-	int op2;
-	while(op2!=2)
-	{
+	//int op2;
+	//while(op2!=2)
+	//{
 		system("clear");
 		printf("\nIngresa la cantidad de números a ordenar:");
 		scanf("%d",&n);
@@ -41,7 +41,7 @@ main( void )
 		A = opcion(A,n,op);
 		uswtime(&utime1, &stime1, &wtime1);
 		imprimirResultados( utime0, stime0, wtime0, utime1, stime1, wtime1, tam, A, op );
-		printf("\nDesea continuar?\n1 -- SI\n2 -- NO\nSeleccion:\t");
-		scanf("%d",&op2);
-	}
+		//printf("\nDesea continuar?\n1 -- SI\n2 -- NO\nSeleccion:\t");
+		//scanf("%d",&op2);
+	//}
 }
