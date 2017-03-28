@@ -138,4 +138,69 @@ Procedimiento Insercion(A,n)
 	fin para
 fin Procedimiento
 \end{lstlisting}
+\justify
+\textbf{\textit{Sol:}}
+Para este algoritmo, al igual que en el caso del ordenamiento burbuja, nos basaremos en el análisis del peor caso para encontrar la cota \textit{O}. De tal forma que para el ordenamiento por inserción el peor caso se da de igual forma cuando el arreglo está ordenado de forma descendente, ya que así, siempre estará ejecuntando las operaciones del while, de no serlo así, habría ocasiones en las que simplemente no entraría al ciclo, ya que no se cumpliría que $A[j]>temp$.\newline
+Del código, vemos lo siguiente:
+\begin{lstlisting}
+Procedimiento Insercion(A,n)
+	para i=1 hasta i<n hacer		// compara n veces, sin embargo,	
+		temp=A[i]					// las operaciones  realizadas		
+		j=i-1						// dependen del while
+		mientras((A[j]>temp)&&(j>=0)) hacer // su analisis se hace   
+			A[j+1]=A[j]						// a continuacion
+			j--
+		fin mientras
+		A[j+1]=temp
+	fin para
+fin Procedimiento
+\end{lstlisting}
+Analizando el caso para el ciclo \textit{while}, tenemos que para el contador $i=1$ el ciclo se ejecutará una sola vez, ya que $j=0$, al decrementarla para la siguiente iteración tendríamos $j=-1$, lo cual ya no cumpliría con la condición del \textit{while} que pide que $j<=0$. Así para $i=2$, tendríamos para las iteraciones del \textit{while} que para la primera $j=1$, se decrementa, luego $j=0$, se decrementa, y así sucesivamente.\newline
+De tal forma que para la función de complejidad temporal tenemos lo siguiente:
+\[f_{t}(n)=1+2+3+...+(n-1)+n=\sum_{i=1}^{n}i=\frac{n(n+1)}{2}\]
+Si observamos la función, nos damos cuenta que es de orden cuadrático, ahora obtengamos la cota \textit{O} de $f_{t}(n)$.\newline
+Sea $g(n)=n^{2}$, $c=1$ y $n_{0}=1$, se tiene que\newline
+Si n=1,
+\center$f(1)=\frac{1^{2}+1}{2}=1\leq 1=1^{2}=g(1)$
+\justify
+Si n=2,
+\center$f(2)=\frac{2^{2}+2}{2}=3\leq 4=2^{2}=g(2)$
+\justify
+Si n=3,
+\center$f(1)=\frac{3^{2}+3}{2}=6\leq 9=3^{2}=g(3)$
+\justify
+En general, se cumple que
+\center$|f(n)|\leq c|g(n)|$ , $\forall n\geq n_{0}$.
+\justify
+De lo que podemos decir que $f_{t}(n)$ es de orden $O(n^{2})$.\newline
+Ahora para el análisis de complejidad espacial tenemos que:
+\begin{lstlisting}
+Procedimiento Insercion(A,n)
+	para i=1 hasta i<n hacer		// 1 variable i	y 1 variable temp
+		temp=A[i]					// n-1 elementos del arreglo "A"
+		j=i-1						// 1 variable j
+		mientras((A[j]>temp)&&(j>=0)) hacer    
+			A[j+1]=A[j]				// es el resultado del while por 2
+ 			j--						
+		fin mientras
+		A[j+1]=temp					// n-1 elementos del arreglo "A"
+	fin para
+fin Procedimiento
+\end{lstlisting}
+De tal forma que la función de complejidad espacial queda de la siguiente manera:
+\[f_{e}(n))=3+n(n+1)+2(n+1)=n^{2}+3n+5\]
+Para encontrar su cota \textit{O}, propongamos $g(n)=n^{2}$, $c=8$ y $n_{0}=1$\newline
+Si n=1,
+\center$f(1)=1^{2}+3(1)+5=8\leq 8=8(1^{2})=g(1)$
+\justify
+Si n=2,
+\center$f(2)=2^{2}+3(2)+5=15\leq 32=8(2^{2})=g(2)$
+\justify
+Si n=3,
+\center$f(3)=3^{2}+3(3)+5=23\leq 72=8(3^{2})=g(13)$
+\justify
+En general, se cumple que
+\center$|f(n)|\leq c|g(n)|$ , $\forall n\geq n_{0}$.
+\justify
+De lo que podemos decir que $f_{e}(n)$ es de orden $O(n^{2})$.
 \end{document}
