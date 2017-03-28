@@ -177,30 +177,30 @@ Ahora para el análisis de complejidad espacial tenemos que:
 \begin{lstlisting}
 Procedimiento Insercion(A,n)
 	para i=1 hasta i<n hacer		// 1 variable i	y 1 variable temp
-		temp=A[i]					// n-1 elementos del arreglo "A"
+		temp=A[i]					// n variables del arreglo "A"
 		j=i-1						// 1 variable j
 		mientras((A[j]>temp)&&(j>=0)) hacer    
-			A[j+1]=A[j]				// es el resultado del while por 2
+			A[j+1]=A[j]				
  			j--						
 		fin mientras
-		A[j+1]=temp					// n-1 elementos del arreglo "A"
+		A[j+1]=temp					
 	fin para
 fin Procedimiento
 \end{lstlisting}
 De tal forma que la función de complejidad espacial queda de la siguiente manera:
-\[f_{e}(n))=3+n(n+1)+2(n+1)=n^{2}+3n+5\]
-Para encontrar su cota \textit{O}, propongamos $g(n)=n^{2}$, $c=8$ y $n_{0}=1$\newline
+\[f_{e}(n))=n+3\]
+Para encontrar su cota \textit{O}, propongamos $g(n)=n$, $c=4$ y $n_{0}=1$\newline
 Si n=1,
-\center$f(1)=1^{2}+3(1)+5=8\leq 8=8(1^{2})=g(1)$
+\center$f(1)=1+3=4\leq 4=4(1)=g(1)$
 \justify
 Si n=2,
-\center$f(2)=2^{2}+3(2)+5=15\leq 32=8(2^{2})=g(2)$
+\center$f(2)=2+3=5\leq 8=4(2)=g(2)$
 \justify
 Si n=3,
-\center$f(3)=3^{2}+3(3)+5=23\leq 72=8(3^{2})=g(13)$
+\center$f(3)=3+3=6\leq 12=4(3)=g(3)$
 \justify
 En general, se cumple que
 \center$|f(n)|\leq c|g(n)|$ , $\forall n\geq n_{0}$.
 \justify
-De lo que podemos decir que $f_{e}(n)$ es de orden $O(n^{2})$.
+De lo que podemos decir que $f_{e}(n)$ es de orden $O(n)$.
 \end{document}
