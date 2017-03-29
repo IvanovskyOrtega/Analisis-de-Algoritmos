@@ -116,15 +116,14 @@ Si n=2,
 \center$f(2)=3+2=5\leq 8=4(2)=g(2)$
 \justify
 Si n=3,
-\center$f(0)=3+3=6\leq 12=4(3)=g(3)$
+\center$f(3)=3+3=6\leq 12=4(3)=g(3)$
 \justify
 En general, se cumple que
 \center$|f(n)|\leq c|g(n)|$ , $\forall n\geq n_{0}$.
 \justify
 De lo que podemos decir que $f_{e}(n)$ es de orden $O(n)$.
 \newpage
-\textbf{Ejercicio 2:} Encuentre el orden \textit{O} de complejidad temporal y espacial
-del algoritmo de ordenamiento por Inserción. 
+\textbf{Ejercicio 2:} Encuentre el orden \textit{O} de complejidad temporal y espacial del algoritmo de ordenamiento por Inserción. 
 \begin{lstlisting}
 Procedimiento Insercion(A,n)
 	para i=1 hasta i<n hacer
@@ -155,7 +154,7 @@ Procedimiento Insercion(A,n)
 	fin para
 fin Procedimiento
 \end{lstlisting}
-Analizando el caso para el ciclo \textit{while}, tenemos que para el contador $i=1$ el ciclo se ejecutará una sola vez, ya que $j=0$, al decrementarla para la siguiente iteración tendríamos $j=-1$, lo cual ya no cumpliría con la condición del \textit{while} que pide que $j<=0$. Así para $i=2$, tendríamos para las iteraciones del \textit{while} que para la primera $j=1$, se decrementa, luego $j=0$, se decrementa, y así sucesivamente.\newline
+Analizando el caso para el ciclo \textit{while}, y tomando como operación base únicamente la asignación, tenemos que para el contador $i=1$ el ciclo se ejecutará una sola vez, ya que $j=0$, al decrementarla para la siguiente iteración tendríamos $j=-1$, lo cual ya no cumpliría con la condición del \textit{while} que pide que $j<=0$. Así para $i=2$, tendríamos para las iteraciones del \textit{while} que para la primera $j=1$, se decrementa, luego $j=0$, se decrementa, y así sucesivamente.\newline
 De tal forma que para la función de complejidad temporal tenemos lo siguiente:
 \[f_{t}(n)=1+2+3+...+(n-1)+n=\sum_{i=1}^{n}i=\frac{n(n+1)}{2}\]
 Si observamos la función, nos damos cuenta que es de orden cuadrático, ahora obtengamos la cota \textit{O} de $f_{t}(n)$.\newline
@@ -203,4 +202,118 @@ En general, se cumple que
 \center$|f(n)|\leq c|g(n)|$ , $\forall n\geq n_{0}$.
 \justify
 De lo que podemos decir que $f_{e}(n)$ es de orden $O(n)$.
+\newpage
+\textbf{Ejercicio 3:} Encuentre el orden \textit{O} de complejidad temporal y espacial
+del algoritmo de ordenamiento por Seleccion.
+\begin{lstlisting}
+Procedimiento Seleccion(A,n)
+	para k=0 hasta k<n-1 hacer
+		p=k;
+		para i=k+1 hasta i>n-1 hacer
+			si A[i]<A[p] hacer
+				p = i
+			fin si
+			si p!=k hacer
+				temp = A[p]
+				A[p] = A[k]
+				A[k] = temp
+			fin si
+		fin para
+	fin para
+fin Procedimiento
+\end{lstlisting}
+\justify
+\textbf{\textit{Sol:}}
+Al igual que en los casos anteriores, el peor de los casos de este algoritmo se da cuando el arreglo esta ordenado de forma descendente, ya que de esta forma siempre estará entrando en las 2 sentencias \textit{if} del \textit{for} mas anidado, ejecutando un mayor número de operaciones. De tal forma que tendremos lo siguiente:
+\begin{lstlisting}
+Procedimiento Seleccion(A,n)
+	para k=0 hasta k<n-1 hacer
+		p=k;
+		para i=k+1 hasta i>n-1 hacer // se ejecuta parecido  
+			si A[i]<A[p] hacer		 // al ordenamiento por insercion
+				p = i				 // el analisis se hace a continuacion
+			fin si
+			si p!=k hacer      
+				temp = A[p]			// las operaciones dentro  de las 
+				A[p] = A[k]			// sentencias if se cuentan, siendo un 
+				A[k] = temp			// total de 4
+			fin si
+		fin para
+	fin para
+fin Procedimiento
+\end{lstlisting}
+Al igual que en caso del ordenamiento por inserción, el número de operaciones va a regirse por el ciclo mas anidado, que es este caso es el $for$ que va de $i=k+1$ hasta $i>n-1$, para la primera iteración de este arreglo con $k=0$, tendríamos $i=1$ se harían $n-1$ comparaciones para validar la condición del $for$ por el número de operaciones dentro de él; para $i=2$, se harían $n-2$ comparaciones, y así hasta $i=n-2$ (que es el último valor en entrar a la condición) se haría una sola comparación.\newline
+Si nos damos cuenta, se da una situación parecida al algoritmo de ordenamiento por inserción, solo que el número de operaciones realizadas por cada iteración va de forma descendente, empezando con $n-1$ y bajando así hasta una sola operación. De tal forma que la función de complejidad temporal estará dada por:
+\[f_{t}(n)=4\sum_{i=1}^{n-1}i=\frac{4(n-1)n}{2}=2n(n-1)\]
+Ahora para encontrar su orden de complejidad, sean $g(n)=n^{2}$, $c=2$ y $n_{0}=0$\newline
+Si n=0,
+\center$f(0)=2(0)(0-1)=0\leq 0 = 2(0)^{2}=g(0)$
+\justify
+Si n=1,
+\center$f(1)=2(1)(1-1)=0\leq 2 = 2(1)^{2}=g(1)$
+\justify
+Si n=2,
+\center$f(2)=2(2)(2-1)=4\leq 8 = 2(2)^{2}=g(2)$
+\justify
+En general, se cumple que
+\center$|f(n)|\leq c|g(n)|$ , $\forall n\geq n_{0}$.
+\justify
+De lo que podemos decir que $f_{t}(n)$ es de orden $O(n^{2})$\newline
+En cuanto al análisis temporal, tenemos lo siguiente:
+\begin{lstlisting}
+Procedimiento Seleccion(A,n)
+	para k=0 hasta k<n-1 hacer			// 1 variable k
+		p=k;							// 1 variable p
+		para i=k+1 hasta i>n-1 hacer 	// 1 variable i 
+			si A[i]<A[p] hacer		 	// n variables del arreglo "A" 
+				p = i				 
+			fin si
+			si p!=k hacer      
+				temp = A[p]				// 1 variable temp 
+				A[p] = A[k]			 
+				A[k] = temp			
+			fin si
+		fin para
+	fin para
+fin Procedimiento
+\end{lstlisting}
+Siendo entonces la función de complejidad espacial:
+\[f_{e}(n)=n+4\]
+De lo que, si tomamos $g(n)=n$, $c=5$ y $n_{0}=1$
+\newline
+Si n=1,
+\center$f(1)=1+4=5\leq 5=5(1)=g(1)$
+\justify
+Si n=2,
+\center$f(2)=2+5=7\leq 10=5(2)=g(2)$
+\justify
+Si n=3,
+\center$f(3)=3+5=8\leq 15=5(3)=g(3)$
+\justify
+En general, se cumple que
+\center$|f(n)|\leq c|g(n)|$ , $\forall n\geq n_{0}$.
+\justify
+De lo que podemos decir que $f_{e}(n)$ es de orden $O(n)$.
+\newpage
+\textbf{Ejercicio 4:} Encuentre el orden \textit{O} de complejidad temporal y espacial
+del algoritmo de ordenamiento por Seleccion.
+\begin{lstlisting}
+Procedimiento Seleccion(A,n)
+	para k=0 hasta k<n-1 hacer
+		p=k;
+		para i=k+1 hasta i>n-1 hacer
+			si A[i]<A[p] hacer
+				p = i
+			fin si
+			si p!=k hacer
+				temp = A[p]
+				A[p] = A[k]
+				A[k] = temp
+			fin si
+		fin para
+	fin para
+fin Procedimiento
+\end{lstlisting}
+\justify
+\textbf{\textit{Sol:}}
 \end{document}

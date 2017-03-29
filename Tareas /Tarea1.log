@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.3.26)  27 MAR 2017 18:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.3.26)  28 MAR 2017 18:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -663,32 +663,33 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 70.
  [2] [3]
-[4] [5] [6] [7] (./Tarea1.aux) ) 
+[4] [5] [6] [7] [8] [9] [10] [11] (./Tarea1.aux) ) 
 Here is how much of TeX's memory you used:
- 3931 strings out of 493013
- 51815 string characters out of 6135682
- 143982 words of memory out of 5000000
- 7452 multiletter control sequences out of 15000+600000
+ 3938 strings out of 493013
+ 51875 string characters out of 6135682
+ 149982 words of memory out of 5000000
+ 7459 multiletter control sequences out of 15000+600000
  9110 words of font info for 32 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 26i,6n,49p,519b,1094s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/
-inconsolata/i4-ot1-0.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/inco
-nsolata/Inconsolata-zi4r.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
-12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Tarea1.pdf (7 pages, 141037 bytes).
+ 26i,6n,49p,546b,1094s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dis
+t/fonts/enc/dvips/inconsolata/i4-ot1-0.enc}</usr/share/texlive/texmf-dist/fonts
+/type1/public/inconsolata/Inconsolata-zi4r.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on Tarea1.pdf (11 pages, 157366 bytes).
 PDF statistics:
- 77 PDF objects out of 1000 (max. 8388607)
- 55 compressed objects within 1 object stream
+ 93 PDF objects out of 1000 (max. 8388607)
+ 66 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
