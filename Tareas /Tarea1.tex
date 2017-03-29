@@ -26,7 +26,7 @@ tabsize=2
 			\vspace{10mm}	 \ \newline	
 			Análisis de Algoritmos
 			\vspace{10mm}	 \ \newline	
-			Profesor: Edgardo Adrián Martínez Franco}
+			Profesor: Edgardo Adrián Franco Martínez}
 \author{Alumno: Ortega Victoriano Ivan}
 \date{Fecha: 24 de Marzo 2017}
  
@@ -295,25 +295,25 @@ En general, se cumple que
 \justify
 De lo que podemos decir que $f_{e}(n)$ es de orden $O(n)$.
 \newpage
-\textbf{Ejercicio 4:} Encuentre el orden \textit{O} de complejidad temporal y espacial
-del algoritmo de ordenamiento por Seleccion.
+\textbf{Ejercicio 4:} Encuentre el orden \textit{O} de complejidad temporal y espacial del algoritmo de ordenamiento Shell.
 \begin{lstlisting}
-Procedimiento Seleccion(A,n)
-	para k=0 hasta k<n-1 hacer
-		p=k;
-		para i=k+1 hasta i>n-1 hacer
-			si A[i]<A[p] hacer
-				p = i
-			fin si
-			si p!=k hacer
-				temp = A[p]
-				A[p] = A[k]
-				A[k] = temp
-			fin si
+Procedimiento Shell(A,n)
+	k = n / 2;
+	mientras k >= 1 hacer
+		para i=k hasta i>=n hacer
+			v = A[i]
+			j = i - k;
+			mientras j >= 0 && A[j] > v hacer
+				A[j + k] = A[j];
+				j -= k;
+			fin mientras
+			A[j + k] = v;
 		fin para
-	fin para
+	k/=2;
+	fin mientras
 fin Procedimiento
 \end{lstlisting}
 \justify
 \textbf{\textit{Sol:}}
+
 \end{document}
