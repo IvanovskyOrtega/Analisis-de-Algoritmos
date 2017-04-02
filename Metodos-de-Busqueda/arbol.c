@@ -1,11 +1,19 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "arbol.h"
+#include "tiempo.h"
+#include "busqueda.h"
 
 int
 aBB ( int* A, int n, int num )
 {
-  printf("Crear arbol\n");
+  double utime0;
+  double stime0;
+  double wtime0;
+  double utime1;
+  double stime1;
+  double wtime1;
+  printf("Creando arbol\n");
   struct nodo *miRaiz;
   miRaiz = (struct nodo *) malloc (sizeof (struct nodo));
   miRaiz = NULL;
@@ -17,7 +25,10 @@ aBB ( int* A, int n, int num )
 	  insertar (&miRaiz, clave);
     }
   printf("Se creo el arbol\n");
+  uswtime(&utime0, &stime0, &wtime0);
   a = buscarABB(miRaiz, num );
+  uswtime(&utime1, &stime1, &wtime1);
+  imprimirResultados( utime0, stime0, wtime0, utime1, stime1, wtime1, 3, num, n, a  );
   return a;
 }
 
