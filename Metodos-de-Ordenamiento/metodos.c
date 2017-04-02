@@ -3,7 +3,7 @@
 #include "metodos.h"
 #include "arbol.h"
 
-int * 
+int *
 opcion ( int* A, int n, int op )
 {
 	switch( op )
@@ -29,7 +29,7 @@ opcion ( int* A, int n, int op )
 		default:
 			printf("\nOpcion invalida :(\n");
 			return A;
-			
+
 	}
 }
 
@@ -135,7 +135,7 @@ int *
 shell(int *A, int n)
 {
   int gap;
-  int i; 
+  int i;
   int j;
   int temp;
   for (gap = n/2 ; gap > 0 ; gap /= 2) {
@@ -150,25 +150,27 @@ shell(int *A, int n)
   return A;
 }
 
-void 
+void
 imprimirResultados( double utime0, double stime0, double wtime0, double utime1, double stime1, double wtime1, int n, int* A, int op )
 {
 	FILE* resultados;
 	resultados = fopen("resultados.txt", "a");
-	fprintf(resultados,"Ordenar %d numeros con el método %d:", n,op);	
+	fprintf(resultados,"Ordenar %d numeros con el método %d:", n,op);
 	fprintf(resultados,"\n");
+	fprintf(resultados,"\tFormato exponencial:\n");
 	fprintf(resultados,"\tReal (Tiempo total)  %.10e s\n",  wtime1 - wtime0);
 	fprintf(resultados,"\tUser (Tiempo de procesamiento en CPU) %.10e s\n",  utime1 - utime0);
 	fprintf(resultados,"\tSys (Tiempo en acciónes de E/S)  %.10e s\n",  stime1 - stime0);
 	fprintf(resultados,"\tCPU/Wall   %.10f %% \n",100.0 * (utime1 - utime0 + stime1 - stime0) / (wtime1 - wtime0));
 	fprintf(resultados,"\n");
 	fprintf(resultados,"\n");
+	fprintf(resultados,"\tFormato segundos:\n");
 	fprintf(resultados,"\tReal (Tiempo total)  %.10f s\n",  wtime1 - wtime0);
 	fprintf(resultados,"\tUser (Tiempo de procesamiento en CPU) %.10f s\n",  utime1 - utime0);
 	fprintf(resultados,"\tSys (Tiempo en acciónes de E/S)  %.10f s\n",  stime1 - stime0);
 	fprintf(resultados,"\tCPU/Wall   %.10f %% \n",100.0 * (utime1 - utime0 + stime1 - stime0) / (wtime1 - wtime0));
 	fprintf(resultados,"\n");
-	/*	
+	/*
 	for( int i = 0 ; i < n  ; i++)
 	{
 		fprintf(resultados, "\t%d)\t%d\n",i+1,A[i]);
