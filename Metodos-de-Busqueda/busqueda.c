@@ -15,6 +15,7 @@ leerNumeros( int* A, int n )
 	  fscanf( numeros , "%d" , &A[i] );
     i++;
 	}
+  fclose(numeros);
 }
 
 void
@@ -40,7 +41,7 @@ busqueda()
   printf("\nIngresa el número a buscar sobre el arreglo:\t");
   scanf("%d", &num );
   printf("\nSeleccionar el metodo de busqueda:\n");
-  printf("(1)-Busqueda Lineal\n(2)-Busqueda Binaria\n(3)-Busqueda sobre un ABB\n");
+  printf("(1)-Busqueda Lineal\n(2)-Busqueda Binaria\n(3)-Busqueda sobre un ABB(Pruebas)\n(4)-Busqueda sobre un ABB(Normal)\n");
   printf("Ingrese opcion:\t");
   scanf( "%d" , &op );
   switch( op )
@@ -53,6 +54,7 @@ busqueda()
         printf("Se encontro el numero %d en el indice %d del arreglo.\n",num,index);
       else
         printf("No se encontro el numero.\n'");
+      imprimirResultados( utime0, stime0, wtime0, utime1, stime1, wtime1, op, num, n, index);
       break;
     case 2:
       uswtime(&utime0, &stime0, &wtime0);
@@ -62,9 +64,17 @@ busqueda()
         printf("Se encontro el numero %d en el indice %d del arreglo.\n",num,index);
       else
         printf("No se encontro el numero.\n'");
+      imprimirResultados( utime0, stime0, wtime0, utime1, stime1, wtime1, op, num, n, index);
       break;
     case 3:
-      index = aBB( A, n, num );
+      index = aBB2( A, n, num );
+      if( index != -1 )
+        printf("Se encontro el numero %d sobre el arbol.\n",num);
+      else
+        printf("No se encontro el numero.\n'");
+      break;
+    case 4:
+      index = aBB1( A, n, num );
       if( index != -1 )
         printf("Se encontro el numero %d sobre el arbol.\n",num);
       else
@@ -74,7 +84,6 @@ busqueda()
       printf("Opcion no valida.\n");
       break;
   }
-  imprimirResultados( utime0, stime0, wtime0, utime1, stime1, wtime1, op, num, n, index);
 }
 
 int
@@ -135,6 +144,6 @@ imprimirResultados( double utime0, double stime0, double wtime0, double utime1, 
   fprintf(resultados,"\tReal (Tiempo total)  %.10f s\n",  wtime1 - wtime0);
   fprintf(resultados,"\tUser (Tiempo de procesamiento en CPU) %.10f s\n",  utime1 - utime0);
   fprintf(resultados,"\tSys (Tiempo en acciónes de E/S)  %.10f s\n",  stime1 - stime0);
-  fprintf(resultados,"\tCPU/Wall   %.10f %% \n",100.0 * (utime1 - utime0 + stime1 - stime0) / (wtime1 - wtime0));
+  fprintf(resultados,"\tCPU/Wall   %.10f %% \n\n",100.0 * (utime1 - utime0 + stime1 - stime0) / (wtime1 - wtime0));
   fclose(resultados);
 }
