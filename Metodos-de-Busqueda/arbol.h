@@ -9,7 +9,9 @@ struct nodo
 };
 
 int
-aBB (int* A, int n, int num);
+aBB1 (int* A, int n, int num);
+int
+aBB2 ( int* A, int n, int num );
 void
 insertar (struct nodo **Raiz, int miDato1);
 struct nodo *
