@@ -16,97 +16,192 @@ main( void )
   int num; //numero a buscar
   int metodo; //opcion para el método de busqueda
   int tamA; //Indica el tamanio del arreglo
+  int abb;
   FILE* op = fopen("opciones.txt","r"); //modo de lectura
-  fscanf(op, "%d %d %d %d", &tamA, &num, &metodo, &control);
-  if( tamA == 100 )
+  fscanf(op, "%d %d %d %d %d", &tamA, &num, &metodo, &control, &abb);
+  if( abb == 1 )
   {
-    tamA = 1000;
+    if( tamA == 100 )
+    {
+      tamA = 1000;
+    }
+    else if( tamA == 1000 )
+    {
+      tamA = 5000;
+    }
+    else if( tamA == 5000 )
+    {
+      tamA = 10000;
+    }
+    else if( tamA == 10000 )
+    {
+      tamA = 50000;
+    }
+    else if( tamA == 50000 )
+    {
+      tamA = 100000;
+    }
+    else if( tamA == 100000 )
+    {
+      tamA = 200000;
+    }
+    else if( tamA == 200000 )
+    {
+      tamA = 400000;
+    }
+    else if( tamA == 400000 )
+    {
+      tamA = 600000;
+    }
+    else if( tamA == 600000 )
+    {
+      tamA = 800000;
+    }
+    else if( tamA == 800000 )
+    {
+      tamA = 1000000;
+    }
+    else if( tamA == 1000000 )
+    {
+      tamA = 2000000;
+    }
+    else if( tamA == 2000000 )
+    {
+      tamA = 3000000;
+    }
+    else if( tamA == 3000000 )
+    {
+      tamA = 4000000;
+    }
+    else if( tamA == 4000000 )
+    {
+      tamA = 5000000;
+    }
+    else if( tamA == 5000000 )
+    {
+      tamA = 6000000;
+    }
+    else if( tamA == 6000000 )
+    {
+      tamA = 7000000;
+    }
+    else if( tamA == 7000000 )
+    {
+      tamA = 8000000;
+    }
+    else if( tamA == 8000000 )
+    {
+      tamA = 9000000;
+    }
+    else if( tamA == 9000000 )
+    {
+      tamA = 10000000;
+    }
+    else if( tamA == 10000000)//Reinicia el fichero
+    {
+      tamA = 100;
+      metodo = 1;
+    }
   }
-  else if( tamA == 1000 )
+  else
   {
-    tamA = 5000;
-  }
-  else if( tamA == 5000 )
-  {
-    tamA = 10000;
-  }
-  else if( tamA == 10000 )
-  {
-    tamA = 50000;
-  }
-  else if( tamA == 50000 )
-  {
-    tamA = 100000;
-  }
-  else if( tamA == 100000 )
-  {
-    tamA = 200000;
-  }
-  else if( tamA == 200000 )
-  {
-    tamA = 400000;
-  }
-  else if( tamA == 400000 )
-  {
-    tamA = 600000;
-  }
-  else if( tamA == 600000 )
-  {
-    tamA = 800000;
-  }
-  else if( tamA == 800000 )
-  {
-    tamA = 1000000;
-  }
-  else if( tamA == 1000000 )
-  {
-    tamA = 2000000;
-  }
-  else if( tamA == 2000000 )
-  {
-    tamA = 3000000;
-  }
-  else if( tamA == 3000000 )
-  {
-    tamA = 4000000;
-  }
-  else if( tamA == 4000000 )
-  {
-    tamA = 5000000;
-  }
-  else if( tamA == 5000000 )
-  {
-    tamA = 6000000;
-  }
-  else if( tamA == 6000000 )
-  {
-    tamA = 7000000;
-  }
-  else if( tamA == 7000000 )
-  {
-    tamA = 8000000;
-  }
-  else if( tamA == 8000000 )
-  {
-    tamA = 9000000;
-  }
-  else if( tamA == 9000000 )
-  {
-    tamA = 10000000;
-  }
-  else if( tamA == 10000000 && metodo !=3 )
-  {
-    tamA = 100;
-    metodo++;
-  }
-  else if( tamA == 10000000 && metodo == 3 )//Reinicia el fichero
-  {
-    tamA = 100;
-    metodo = 1;
-    control++;
+    if( tamA == 100 )
+    {
+      tamA = 1000;
+    }
+    else if( tamA == 1000 )
+    {
+      tamA = 5000;
+    }
+    else if( tamA == 5000 )
+    {
+      tamA = 10000;
+    }
+    else if( tamA == 10000 )
+    {
+      tamA = 50000;
+    }
+    else if( tamA == 50000 )
+    {
+      tamA = 100000;
+    }
+    else if( tamA == 100000 )
+    {
+      tamA = 200000;
+    }
+    else if( tamA == 200000 )
+    {
+      tamA = 400000;
+    }
+    else if( tamA == 400000 )
+    {
+      tamA = 600000;
+    }
+    else if( tamA == 600000 )
+    {
+      tamA = 800000;
+    }
+    else if( tamA == 800000 )
+    {
+      tamA = 1000000;
+    }
+    else if( tamA == 1000000 )
+    {
+      tamA = 2000000;
+    }
+    else if( tamA == 2000000 )
+    {
+      tamA = 3000000;
+    }
+    else if( tamA == 3000000 )
+    {
+      tamA = 4000000;
+    }
+    else if( tamA == 4000000 )
+    {
+      tamA = 5000000;
+    }
+    else if( tamA == 5000000 )
+    {
+      tamA = 6000000;
+    }
+    else if( tamA == 6000000 )
+    {
+      tamA = 7000000;
+    }
+    else if( tamA == 7000000 )
+    {
+      tamA = 8000000;
+    }
+    else if( tamA == 8000000 )
+    {
+      tamA = 9000000;
+    }
+    else if( tamA == 9000000 )
+    {
+      tamA = 10000000;
+    }
+    else if( tamA == 10000000 && metodo !=2 )
+    {
+      tamA = 100;
+      metodo++;
+    }
+    else if( tamA == 10000000 && metodo == 2 && control != 19 )
+    {
+      tamA = 100;
+      metodo = 1;
+      control++;
+    }
+    else if( tamA == 10000000 && metodo == 2 && control == 19)//Reinicia el fichero
+    {
+      tamA = 100;
+      metodo = 3;
+      control = 0;
+      abb = 1;
+    }
   }
   fclose(op);
   op = fopen("opciones.txt","w");//abrir el archivo en modo de escritura
-  fprintf(op,"%d %d %d %d",tamA,numeros[control],metodo,control);
+  fprintf(op,"%d %d %d %d %d",tamA,numeros[control],metodo,control,abb);
   fclose(op);
 }
