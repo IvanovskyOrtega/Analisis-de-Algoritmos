@@ -5,7 +5,7 @@
 #include "busqueda.h"
 
 int
-aBB ( int* A, int n, int num )
+aBB1 ( int* A, int n, int num )
 {
   double utime0;
   double stime0;
@@ -29,6 +29,42 @@ aBB ( int* A, int n, int num )
   a = buscarABB(miRaiz, num );
   uswtime(&utime1, &stime1, &wtime1);
   imprimirResultados( utime0, stime0, wtime0, utime1, stime1, wtime1, 3, num, n, a  );
+  return a;
+}
+
+int
+aBB2 ( int* A, int n, int num )
+{
+  double utime0;
+  double stime0;
+  double wtime0;
+  double utime1;
+  double stime1;
+  double wtime1;
+  int i;
+  int numeros[20] = {322486, 14700764, 3128036, 6337399, 61396, 10393545, 2147445644,
+                  1295390003, 450057883, 187645041, 1980098116, 152503, 5000,
+                  1493283650, 214826, 1843349527, 1360839354, 2109248666,
+                  2147470852, 0};
+  printf("Creando arbol\n");
+  struct nodo *miRaiz;
+  miRaiz = (struct nodo *) malloc (sizeof (struct nodo));
+  miRaiz = NULL;
+  int clave;
+  int a;
+  for( i = 0 ; i < n ; i++ )
+    {
+	  clave = A[i];
+	  insertar (&miRaiz, clave);
+    }
+  printf("Se creo el arbol\n");
+  for( i = 0 ; i < 20 ; i++ )
+  {
+    uswtime(&utime0, &stime0, &wtime0);
+    a = buscarABB(miRaiz, numeros[i] );
+    uswtime(&utime1, &stime1, &wtime1);
+    imprimirResultados( utime0, stime0, wtime0, utime1, stime1, wtime1, 3, numeros[i], n, a  );
+  }
   return a;
 }
 
@@ -72,12 +108,25 @@ inordenSecuencial(struct nodo *Raiz, int *A)
 void
 insertar (struct nodo **Raiz, int miDato1)
 {
-  if (*Raiz == NULL)
-    *Raiz = nuevoNodo (miDato1);
-  else if (miDato1 < (*Raiz)->dato)
-    insertar (&((*Raiz)->Izq), miDato1);
-  else
-    insertar (&((*Raiz)->Der), miDato1);
+	struct nodo ** aux=NULL;
+	aux=Raiz;
+  	if (*Raiz == NULL){
+  		printf("creo nodo\n");
+   		*Raiz = nuevoNodo (miDato1);
+  	}
+  	else
+  		while(*aux!=NULL){
+  			if (miDato1 < (*aux)->dato){
+    			aux=&((*aux)->Izq);
+  			}
+  			else if (miDato1 > (*aux)->dato){
+    			aux=&((*aux)->Der);
+  			}
+  			else{
+  				break;
+  			}
+  		*aux=nuevoNodo(miDato1);
+	}
 }
 
 struct nodo *
