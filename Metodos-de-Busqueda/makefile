@@ -9,6 +9,10 @@ arbol.o: arbol.c
 tiempo.o: tiempo.c
 	gcc -c tiempo.c -Wall
 clean:
-	rm main.o busqueda.o arbol.o a.out tiempo.o
+	rm main.o busqueda.o arbol.o a.out tiempo.o opciones.o
+indent:
+	indent main.c busqueda.c arbol.c tiempo.c opciones.c
+opciones: opciones.c
+	gcc opciones.c -o op -Wall 
 run: a.out
 	./a.out
