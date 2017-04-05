@@ -1,2 +1,1150 @@
+Ordenar 100 numeros con el método 1:
+	Formato exponencial:
+	Real (Tiempo total)  1.5115737915e-04 s
+	User (Tiempo de procesamiento en CPU) 0.0000000000e+00 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+	CPU/Wall   0.0000000000 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  0.0001511574 s
+	User (Tiempo de procesamiento en CPU) 0.0000000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000 s
+	CPU/Wall   0.0000000000 % 
+
+Ordenar 1000 numeros con el método 1:
+	Formato exponencial:
+	Real (Tiempo total)  6.2491893768e-03 s
+	User (Tiempo de procesamiento en CPU) 8.0000000000e-03 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+	CPU/Wall   128.0166037160 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  0.0062491894 s
+	User (Tiempo de procesamiento en CPU) 0.0080000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000 s
+	CPU/Wall   128.0166037160 % 
+
+Ordenar 5000 numeros con el método 1:
+	Formato exponencial:
+	Real (Tiempo total)  7.3969125748e-02 s
+	User (Tiempo de procesamiento en CPU) 7.2000000000e-02 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+	CPU/Wall   97.3379085831 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  0.0739691257 s
+	User (Tiempo de procesamiento en CPU) 0.0720000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000 s
+	CPU/Wall   97.3379085831 % 
+
+Ordenar 10000 numeros con el método 1:
+	Formato exponencial:
+	Real (Tiempo total)  3.2591414452e-01 s
+	User (Tiempo de procesamiento en CPU) 3.2400000000e-01 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+	CPU/Wall   99.4126844299 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  0.3259141445 s
+	User (Tiempo de procesamiento en CPU) 0.3240000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000 s
+	CPU/Wall   99.4126844299 % 
+
+Ordenar 50000 numeros con el método 1:
+	Formato exponencial:
+	Real (Tiempo total)  9.2130560875e+00 s
+	User (Tiempo de procesamiento en CPU) 9.1920000000e+00 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+	CPU/Wall   99.7714538228 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  9.2130560875 s
+	User (Tiempo de procesamiento en CPU) 9.1920000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000 s
+	CPU/Wall   99.7714538228 % 
+
+Ordenar 100000 numeros con el método 1:
+	Formato exponencial:
+	Real (Tiempo total)  3.7189516068e+01 s
+	User (Tiempo de procesamiento en CPU) 3.7168000000e+01 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+	CPU/Wall   99.9421448038 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  37.1895160675 s
+	User (Tiempo de procesamiento en CPU) 37.1680000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000 s
+	CPU/Wall   99.9421448038 % 
+
+Ordenar 200000 numeros con el método 1:
+	Formato exponencial:
+	Real (Tiempo total)  1.4869749093e+02 s
+	User (Tiempo de procesamiento en CPU) 1.4869200000e+02 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+	CPU/Wall   99.9963073146 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  148.6974909306 s
+	User (Tiempo de procesamiento en CPU) 148.6920000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000 s
+	CPU/Wall   99.9963073146 % 
+
+Ordenar 400000 numeros con el método 1:
+	Formato exponencial:
+	Real (Tiempo total)  5.9598197389e+02 s
+	User (Tiempo de procesamiento en CPU) 5.9598800000e+02 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+	CPU/Wall   100.0010111235 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  595.9819738865 s
+	User (Tiempo de procesamiento en CPU) 595.9880000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000 s
+	CPU/Wall   100.0010111235 % 
+
+Ordenar 600000 numeros con el método 1:
+	Formato exponencial:
+	Real (Tiempo total)  1.3353008060e+03 s
+	User (Tiempo de procesamiento en CPU) 1.3353200000e+03 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+	CPU/Wall   100.0014374255 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  1335.3008060455 s
+	User (Tiempo de procesamiento en CPU) 1335.3200000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000 s
+	CPU/Wall   100.0014374255 % 
+
+Ordenar 800000 numeros con el método 1:
+	Formato exponencial:
+	Real (Tiempo total)  2.3746891060e+03 s
+	User (Tiempo de procesamiento en CPU) 2.3747280000e+03 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+	CPU/Wall   100.0016378570 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  2374.6891059875 s
+	User (Tiempo de procesamiento en CPU) 2374.7280000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000 s
+	CPU/Wall   100.0016378570 % 
+
+Ordenar 1000000 numeros con el método 1:
+	Formato exponencial:
+	Real (Tiempo total)  3.7185383072e+03 s
+	User (Tiempo de procesamiento en CPU) 3.7186000000e+03 s
+	Sys (Tiempo en acciónes de E/S)  4.0000000000e-03 s
+	CPU/Wall   100.0017666299 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  3718.5383071899 s
+	User (Tiempo de procesamiento en CPU) 3718.6000000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0040000000 s
+	CPU/Wall   100.0017666299 % 
+
+Ordenar 100 numeros con el método 2:
+	Formato exponencial:
+	Real (Tiempo total)  6.7949295044e-05 s
+	User (Tiempo de procesamiento en CPU) 0.0000000000e+00 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+	CPU/Wall   0.0000000000 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  0.0000679493 s
+	User (Tiempo de procesamiento en CPU) 0.0000000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000 s
+	CPU/Wall   0.0000000000 % 
+
+Ordenar 1000 numeros con el método 2:
+	Formato exponencial:
+	Real (Tiempo total)  1.9850730896e-03 s
+	User (Tiempo de procesamiento en CPU) 0.0000000000e+00 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+	CPU/Wall   0.0000000000 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  0.0019850731 s
+	User (Tiempo de procesamiento en CPU) 0.0000000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000 s
+	CPU/Wall   0.0000000000 % 
+
+Ordenar 5000 numeros con el método 2:
+	Formato exponencial:
+	Real (Tiempo total)  3.2335042953e-02 s
+	User (Tiempo de procesamiento en CPU) 3.2000000000e-02 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+	CPU/Wall   98.9638394668 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  0.0323350430 s
+	User (Tiempo de procesamiento en CPU) 0.0320000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000 s
+	CPU/Wall   98.9638394668 % 
+
+Ordenar 10000 numeros con el método 2:
+	Formato exponencial:
+	Real (Tiempo total)  1.2762498856e-01 s
+	User (Tiempo de procesamiento en CPU) 1.2800000000e-01 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+	CPU/Wall   100.2938385722 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  0.1276249886 s
+	User (Tiempo de procesamiento en CPU) 0.1280000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000 s
+	CPU/Wall   100.2938385722 % 
+
+Ordenar 50000 numeros con el método 2:
+	Formato exponencial:
+	Real (Tiempo total)  3.2291460037e+00 s
+	User (Tiempo de procesamiento en CPU) 3.2280000000e+00 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+	CPU/Wall   99.9645106254 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  3.2291460037 s
+	User (Tiempo de procesamiento en CPU) 3.2280000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000 s
+	CPU/Wall   99.9645106254 % 
+
+Ordenar 100000 numeros con el método 2:
+	Formato exponencial:
+	Real (Tiempo total)  1.2796023130e+01 s
+	User (Tiempo de procesamiento en CPU) 1.2792000000e+01 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+	CPU/Wall   99.9685595253 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  12.7960231304 s
+	User (Tiempo de procesamiento en CPU) 12.7920000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000 s
+	CPU/Wall   99.9685595253 % 
+
+Ordenar 200000 numeros con el método 2:
+	Formato exponencial:
+	Real (Tiempo total)  5.0980749130e+01 s
+	User (Tiempo de procesamiento en CPU) 5.0976000000e+01 s
+	Sys (Tiempo en acciónes de E/S)  4.0000000000e-03 s
+	CPU/Wall   99.9985305625 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  50.9807491302 s
+	User (Tiempo de procesamiento en CPU) 50.9760000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0040000000 s
+	CPU/Wall   99.9985305625 % 
+
+Ordenar 400000 numeros con el método 2:
+	Formato exponencial:
+	Real (Tiempo total)  2.0503036499e+02 s
+	User (Tiempo de procesamiento en CPU) 2.0501200000e+02 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+	CPU/Wall   99.9910427949 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  205.0303649902 s
+	User (Tiempo de procesamiento en CPU) 205.0120000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000 s
+	CPU/Wall   99.9910427949 % 
+
+Ordenar 600000 numeros con el método 2:
+	Formato exponencial:
+	Real (Tiempo total)  4.6094904113e+02 s
+	User (Tiempo de procesamiento en CPU) 4.6094800000e+02 s
+	Sys (Tiempo en acciónes de E/S)  4.0000000000e-03 s
+	CPU/Wall   100.0006419087 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  460.9490411282 s
+	User (Tiempo de procesamiento en CPU) 460.9480000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0040000000 s
+	CPU/Wall   100.0006419087 % 
+
+Ordenar 800000 numeros con el método 2:
+	Formato exponencial:
+	Real (Tiempo total)  8.1514582205e+02 s
+	User (Tiempo de procesamiento en CPU) 8.1515200000e+02 s
+	Sys (Tiempo en acciónes de E/S)  4.0000000000e-03 s
+	CPU/Wall   100.0012486050 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  815.1458220482 s
+	User (Tiempo de procesamiento en CPU) 815.1520000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0040000000 s
+	CPU/Wall   100.0012486050 % 
+
+Ordenar 1000000 numeros con el método 2:
+	Formato exponencial:
+	Real (Tiempo total)  1.2747867570e+03 s
+	User (Tiempo de procesamiento en CPU) 1.2747800000e+03 s
+	Sys (Tiempo en acciónes de E/S)  4.0000000000e-03 s
+	CPU/Wall   99.9997837291 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  1274.7867569923 s
+	User (Tiempo de procesamiento en CPU) 1274.7800000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0040000000 s
+	CPU/Wall   99.9997837291 % 
+
+Ordenar 2000000 numeros con el método 2:
+	Formato exponencial:
+	Real (Tiempo total)  5.1465804281e+03 s
+	User (Tiempo de procesamiento en CPU) 5.1466600000e+03 s
+	Sys (Tiempo en acciónes de E/S)  8.0000000000e-03 s
+	CPU/Wall   100.0017015546 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  5146.5804281235 s
+	User (Tiempo de procesamiento en CPU) 5146.6600000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0080000000 s
+	CPU/Wall   100.0017015546 % 
+
+Ordenar 3000000 numeros con el método 2:
+	Formato exponencial:
+	Real (Tiempo total)  1.1494951182e+04 s
+	User (Tiempo de procesamiento en CPU) 1.1494484000e+04 s
+	Sys (Tiempo en acciónes de E/S)  6.2000000000e-01 s
+	CPU/Wall   100.0013294347 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  11494.9511821270 s
+	User (Tiempo de procesamiento en CPU) 11494.4840000000 s
+	Sys (Tiempo en acciónes de E/S)  0.6200000000 s
+	CPU/Wall   100.0013294347 % 
+
+Ordenar 4000000 numeros con el método 2:
+	Formato exponencial:
+	Real (Tiempo total)  2.0920981368e+04 s
+	User (Tiempo de procesamiento en CPU) 2.0921324000e+04 s
+	Sys (Tiempo en acciónes de E/S)  1.6000000000e-02 s
+	CPU/Wall   100.0017142225 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  20920.9813678265 s
+	User (Tiempo de procesamiento en CPU) 20921.3240000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0160000000 s
+	CPU/Wall   100.0017142225 % 
+
+Ordenar 100 numeros con el método 3:
+	Formato exponencial:
+	Real (Tiempo total)  3.0994415283e-05 s
+	User (Tiempo de procesamiento en CPU) 0.0000000000e+00 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+	CPU/Wall   0.0000000000 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  0.0000309944 s
+	User (Tiempo de procesamiento en CPU) 0.0000000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000 s
+	CPU/Wall   0.0000000000 % 
+
+Ordenar 1000 numeros con el método 3:
+	Formato exponencial:
+	Real (Tiempo total)  7.7295303345e-04 s
+	User (Tiempo de procesamiento en CPU) 0.0000000000e+00 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+	CPU/Wall   0.0000000000 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  0.0007729530 s
+	User (Tiempo de procesamiento en CPU) 0.0000000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000 s
+	CPU/Wall   0.0000000000 % 
+
+Ordenar 5000 numeros con el método 3:
+	Formato exponencial:
+	Real (Tiempo total)  1.5280008316e-02 s
+	User (Tiempo de procesamiento en CPU) 1.6000000000e-02 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+	CPU/Wall   104.7119848960 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  0.0152800083 s
+	User (Tiempo de procesamiento en CPU) 0.0160000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000 s
+	CPU/Wall   104.7119848960 % 
+
+Ordenar 10000 numeros con el método 3:
+	Formato exponencial:
+	Real (Tiempo total)  5.9091091156e-02 s
+	User (Tiempo de procesamiento en CPU) 6.0000000000e-02 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+	CPU/Wall   101.5381486891 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  0.0590910912 s
+	User (Tiempo de procesamiento en CPU) 0.0600000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000 s
+	CPU/Wall   101.5381486891 % 
+
+Ordenar 50000 numeros con el método 3:
+	Formato exponencial:
+	Real (Tiempo total)  1.4872071743e+00 s
+	User (Tiempo de procesamiento en CPU) 1.4840000000e+00 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+	CPU/Wall   99.7843491911 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  1.4872071743 s
+	User (Tiempo de procesamiento en CPU) 1.4840000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000 s
+	CPU/Wall   99.7843491911 % 
+
+Ordenar 100000 numeros con el método 3:
+	Formato exponencial:
+	Real (Tiempo total)  5.9807569981e+00 s
+	User (Tiempo de procesamiento en CPU) 5.9800000000e+00 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+	CPU/Wall   99.9873427718 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  5.9807569981 s
+	User (Tiempo de procesamiento en CPU) 5.9800000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000 s
+	CPU/Wall   99.9873427718 % 
+
+Ordenar 200000 numeros con el método 3:
+	Formato exponencial:
+	Real (Tiempo total)  2.3771816969e+01 s
+	User (Tiempo de procesamiento en CPU) 2.3772000000e+01 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+	CPU/Wall   100.0007699499 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  23.7718169689 s
+	User (Tiempo de procesamiento en CPU) 23.7720000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000 s
+	CPU/Wall   100.0007699499 % 
+
+Ordenar 400000 numeros con el método 3:
+	Formato exponencial:
+	Real (Tiempo total)  9.5463291883e+01 s
+	User (Tiempo de procesamiento en CPU) 9.5460000000e+01 s
+	Sys (Tiempo en acciónes de E/S)  4.0000000000e-03 s
+	CPU/Wall   100.0007417684 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  95.4632918835 s
+	User (Tiempo de procesamiento en CPU) 95.4600000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0040000000 s
+	CPU/Wall   100.0007417684 % 
+
+Ordenar 600000 numeros con el método 3:
+	Formato exponencial:
+	Real (Tiempo total)  2.1340048003e+02 s
+	User (Tiempo de procesamiento en CPU) 2.1340400000e+02 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+	CPU/Wall   100.0016494658 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  213.4004800320 s
+	User (Tiempo de procesamiento en CPU) 213.4040000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000 s
+	CPU/Wall   100.0016494658 % 
+
+Ordenar 800000 numeros con el método 3:
+	Formato exponencial:
+	Real (Tiempo total)  3.8012259603e+02 s
+	User (Tiempo de procesamiento en CPU) 3.8011200000e+02 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+	CPU/Wall   99.9972124716 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  380.1225960255 s
+	User (Tiempo de procesamiento en CPU) 380.1120000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000 s
+	CPU/Wall   99.9972124716 % 
+
+Ordenar 1000000 numeros con el método 3:
+	Formato exponencial:
+	Real (Tiempo total)  5.9779132581e+02 s
+	User (Tiempo de procesamiento en CPU) 5.9779600000e+02 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+	CPU/Wall   100.0007819104 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  597.7913258076 s
+	User (Tiempo de procesamiento en CPU) 597.7960000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000 s
+	CPU/Wall   100.0007819104 % 
+
+Ordenar 2000000 numeros con el método 3:
+	Formato exponencial:
+	Real (Tiempo total)  2.4435472000e+03 s
+	User (Tiempo de procesamiento en CPU) 2.4435800000e+03 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+	CPU/Wall   100.0013423123 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  2443.5471999645 s
+	User (Tiempo de procesamiento en CPU) 2443.5800000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000 s
+	CPU/Wall   100.0013423123 % 
+
+Ordenar 3000000 numeros con el método 3:
+	Formato exponencial:
+	Real (Tiempo total)  5.4485198441e+03 s
+	User (Tiempo de procesamiento en CPU) 5.4486120000e+03 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+	CPU/Wall   100.0016913941 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  5448.5198440552 s
+	User (Tiempo de procesamiento en CPU) 5448.6120000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000 s
+	CPU/Wall   100.0016913941 % 
+
+Ordenar 100 numeros con el método 4:
+	Formato exponencial:
+	Real (Tiempo total)  5.6982040405e-05 s
+	User (Tiempo de procesamiento en CPU) 0.0000000000e+00 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+	CPU/Wall   0.0000000000 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  0.0000569820 s
+	User (Tiempo de procesamiento en CPU) 0.0000000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000 s
+	CPU/Wall   0.0000000000 % 
+
+Ordenar 1000 numeros con el método 4:
+	Formato exponencial:
+	Real (Tiempo total)  1.0969638824e-03 s
+	User (Tiempo de procesamiento en CPU) 0.0000000000e+00 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+	CPU/Wall   0.0000000000 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  0.0010969639 s
+	User (Tiempo de procesamiento en CPU) 0.0000000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000 s
+	CPU/Wall   0.0000000000 % 
+
+Ordenar 5000 numeros con el método 4:
+	Formato exponencial:
+	Real (Tiempo total)  2.8141021729e-02 s
+	User (Tiempo de procesamiento en CPU) 2.8000000000e-02 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+	CPU/Wall   99.4988748814 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  0.0281410217 s
+	User (Tiempo de procesamiento en CPU) 0.0280000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000 s
+	CPU/Wall   99.4988748814 % 
+
+Ordenar 10000 numeros con el método 4:
+	Formato exponencial:
+	Real (Tiempo total)  9.5640182495e-02 s
+	User (Tiempo de procesamiento en CPU) 9.6000000000e-02 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+	CPU/Wall   100.3762200108 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  0.0956401825 s
+	User (Tiempo de procesamiento en CPU) 0.0960000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000 s
+	CPU/Wall   100.3762200108 % 
+
+Ordenar 50000 numeros con el método 4:
+	Formato exponencial:
+	Real (Tiempo total)  2.3621327877e+00 s
+	User (Tiempo de procesamiento en CPU) 2.3640000000e+00 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+	CPU/Wall   100.0790477278 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  2.3621327877 s
+	User (Tiempo de procesamiento en CPU) 2.3640000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000 s
+	CPU/Wall   100.0790477278 % 
+
+Ordenar 100000 numeros con el método 4:
+	Formato exponencial:
+	Real (Tiempo total)  9.4488871098e+00 s
+	User (Tiempo de procesamiento en CPU) 9.4480000000e+00 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+	CPU/Wall   99.9906114895 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  9.4488871098 s
+	User (Tiempo de procesamiento en CPU) 9.4480000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000 s
+	CPU/Wall   99.9906114895 % 
+
+Ordenar 200000 numeros con el método 4:
+	Formato exponencial:
+	Real (Tiempo total)  3.7698554993e+01 s
+	User (Tiempo de procesamiento en CPU) 3.7696000000e+01 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+	CPU/Wall   99.9932225713 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  37.6985549927 s
+	User (Tiempo de procesamiento en CPU) 37.6960000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000 s
+	CPU/Wall   99.9932225713 % 
+
+Ordenar 400000 numeros con el método 4:
+	Formato exponencial:
+	Real (Tiempo total)  1.5281751704e+02 s
+	User (Tiempo de procesamiento en CPU) 1.5280800000e+02 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+	CPU/Wall   99.9937722832 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  152.8175170422 s
+	User (Tiempo de procesamiento en CPU) 152.8080000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000 s
+	CPU/Wall   99.9937722832 % 
+
+Ordenar 600000 numeros con el método 4:
+	Formato exponencial:
+	Real (Tiempo total)  3.4321936393e+02 s
+	User (Tiempo de procesamiento en CPU) 3.4322000000e+02 s
+	Sys (Tiempo en acciónes de E/S)  4.0000000000e-03 s
+	CPU/Wall   100.0013507607 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  343.2193639278 s
+	User (Tiempo de procesamiento en CPU) 343.2200000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0040000000 s
+	CPU/Wall   100.0013507607 % 
+
+Ordenar 800000 numeros con el método 4:
+	Formato exponencial:
+	Real (Tiempo total)  6.0492691302e+02 s
+	User (Tiempo de procesamiento en CPU) 6.0493600000e+02 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+	CPU/Wall   100.0015021611 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  604.9269130230 s
+	User (Tiempo de procesamiento en CPU) 604.9360000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000 s
+	CPU/Wall   100.0015021611 % 
+
+Ordenar 1000000 numeros con el método 4:
+	Formato exponencial:
+	Real (Tiempo total)  9.4217540407e+02 s
+	User (Tiempo de procesamiento en CPU) 9.4219200000e+02 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+	CPU/Wall   100.0017614478 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  942.1754040718 s
+	User (Tiempo de procesamiento en CPU) 942.1920000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000 s
+	CPU/Wall   100.0017614478 % 
+
+Ordenar 2000000 numeros con el método 4:
+	Formato exponencial:
+	Real (Tiempo total)  3.8286462872e+03 s
+	User (Tiempo de procesamiento en CPU) 3.8287000000e+03 s
+	Sys (Tiempo en acciónes de E/S)  4.0000000000e-03 s
+	CPU/Wall   100.0015073943 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  3828.6462872028 s
+	User (Tiempo de procesamiento en CPU) 3828.7000000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0040000000 s
+	CPU/Wall   100.0015073943 % 
+
+	Formato segundos:
+	Real (Tiempo total)  0.3286011219 s
+	User (Tiempo de procesamiento en CPU) 0.2960000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0320000000 s
+	CPU/Wall   99.8170663877 % 
+
+Ordenar 100 numeros con el método 5:
+	Formato exponencial:
+	Real (Tiempo total)  3.2186508179e-05 s
+	User (Tiempo de procesamiento en CPU) 0.0000000000e+00 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+	CPU/Wall   0.0000000000 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  0.0000321865 s
+	User (Tiempo de procesamiento en CPU) 0.0000000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000 s
+	CPU/Wall   0.0000000000 % 
+
+Ordenar 1000 numeros con el método 5:
+	Formato exponencial:
+	Real (Tiempo total)  1.2207031250e-04 s
+	User (Tiempo de procesamiento en CPU) 0.0000000000e+00 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+	CPU/Wall   0.0000000000 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  0.0001220703 s
+	User (Tiempo de procesamiento en CPU) 0.0000000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000 s
+	CPU/Wall   0.0000000000 % 
+
+Ordenar 5000 numeros con el método 5:
+	Formato exponencial:
+	Real (Tiempo total)  8.1300735474e-04 s
+	User (Tiempo de procesamiento en CPU) 0.0000000000e+00 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+	CPU/Wall   0.0000000000 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  0.0008130074 s
+	User (Tiempo de procesamiento en CPU) 0.0000000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000 s
+	CPU/Wall   0.0000000000 % 
+
+Ordenar 10000 numeros con el método 5:
+	Formato exponencial:
+	Real (Tiempo total)  2.0020008087e-03 s
+	User (Tiempo de procesamiento en CPU) 0.0000000000e+00 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+	CPU/Wall   0.0000000000 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  0.0020020008 s
+	User (Tiempo de procesamiento en CPU) 0.0000000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000 s
+	CPU/Wall   0.0000000000 % 
+
+Ordenar 50000 numeros con el método 5:
+	Formato exponencial:
+	Real (Tiempo total)  1.2375116348e-02 s
+	User (Tiempo de procesamiento en CPU) 1.2000000000e-02 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+	CPU/Wall   96.9687852808 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  0.0123751163 s
+	User (Tiempo de procesamiento en CPU) 0.0120000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000 s
+	CPU/Wall   96.9687852808 % 
+
+Ordenar 100000 numeros con el método 5:
+	Formato exponencial:
+	Real (Tiempo total)  2.8604030609e-02 s
+	User (Tiempo de procesamiento en CPU) 2.8000000000e-02 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+	CPU/Wall   97.8883024655 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  0.0286040306 s
+	User (Tiempo de procesamiento en CPU) 0.0280000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000 s
+	CPU/Wall   97.8883024655 % 
+
+Ordenar 200000 numeros con el método 5:
+	Formato exponencial:
+	Real (Tiempo total)  6.2158823013e-02 s
+	User (Tiempo de procesamiento en CPU) 6.0000000000e-02 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+	CPU/Wall   96.5269242424 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  0.0621588230 s
+	User (Tiempo de procesamiento en CPU) 0.0600000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000 s
+	CPU/Wall   96.5269242424 % 
+
+Ordenar 400000 numeros con el método 5:
+	Formato exponencial:
+	Real (Tiempo total)  1.4195609093e-01 s
+	User (Tiempo de procesamiento en CPU) 1.4400000000e-01 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+	CPU/Wall   101.4398178053 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  0.1419560909 s
+	User (Tiempo de procesamiento en CPU) 0.1440000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000 s
+	CPU/Wall   101.4398178053 % 
+
+Ordenar 600000 numeros con el método 5:
+	Formato exponencial:
+	Real (Tiempo total)  2.1549081802e-01 s
+	User (Tiempo de procesamiento en CPU) 2.1600000000e-01 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+	CPU/Wall   100.2362894071 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  0.2154908180 s
+	User (Tiempo de procesamiento en CPU) 0.2160000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000 s
+	CPU/Wall   100.2362894071 % 
+
+Ordenar 800000 numeros con el método 5:
+	Formato exponencial:
+	Real (Tiempo total)  3.1527900696e-01 s
+	User (Tiempo de procesamiento en CPU) 3.1200000000e-01 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+	CPU/Wall   98.9599666056 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  0.3152790070 s
+	User (Tiempo de procesamiento en CPU) 0.3120000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000 s
+	CPU/Wall   98.9599666056 % 
+
+Ordenar 1000000 numeros con el método 5:
+	Formato exponencial:
+	Real (Tiempo total)  3.8639497757e-01 s
+	User (Tiempo de procesamiento en CPU) 3.8800000000e-01 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+	CPU/Wall   100.4153838749 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  0.3863949776 s
+	User (Tiempo de procesamiento en CPU) 0.3880000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000 s
+	CPU/Wall   100.4153838749 % 
+
+Ordenar 2000000 numeros con el método 5:
+	Formato exponencial:
+	Real (Tiempo total)  8.8762211800e-01 s
+	User (Tiempo de procesamiento en CPU) 8.8400000000e-01 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+	CPU/Wall   99.5919301781 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  0.8876221180 s
+	User (Tiempo de procesamiento en CPU) 0.8840000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000 s
+	CPU/Wall   99.5919301781 % 
+  
+Ordenar 100 numeros con el método 6:
+	Formato exponencial:
+	Real (Tiempo total)  1.7881393433e-05 s
+	User (Tiempo de procesamiento en CPU) 0.0000000000e+00 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+	CPU/Wall   0.0000000000 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  0.0000178814 s
+	User (Tiempo de procesamiento en CPU) 0.0000000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000 s
+	CPU/Wall   0.0000000000 % 
+
+Ordenar 1000 numeros con el método 6:
+	Formato exponencial:
+	Real (Tiempo total)  3.8146972656e-05 s
+	User (Tiempo de procesamiento en CPU) 0.0000000000e+00 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+	CPU/Wall   0.0000000000 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  0.0000381470 s
+	User (Tiempo de procesamiento en CPU) 0.0000000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000 s
+	CPU/Wall   0.0000000000 % 
+
+Ordenar 5000 numeros con el método 6:
+	Formato exponencial:
+	Real (Tiempo total)  1.9717216492e-04 s
+	User (Tiempo de procesamiento en CPU) 0.0000000000e+00 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+	CPU/Wall   0.0000000000 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  0.0001971722 s
+	User (Tiempo de procesamiento en CPU) 0.0000000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000 s
+	CPU/Wall   0.0000000000 % 
+
+Ordenar 10000 numeros con el método 6:
+	Formato exponencial:
+	Real (Tiempo total)  4.1508674622e-04 s
+	User (Tiempo de procesamiento en CPU) 0.0000000000e+00 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+	CPU/Wall   0.0000000000 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  0.0004150867 s
+	User (Tiempo de procesamiento en CPU) 0.0000000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000 s
+	CPU/Wall   0.0000000000 % 
+
+Ordenar 50000 numeros con el método 6:
+	Formato exponencial:
+	Real (Tiempo total)  2.0360946655e-03 s
+	User (Tiempo de procesamiento en CPU) 0.0000000000e+00 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+	CPU/Wall   0.0000000000 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  0.0020360947 s
+	User (Tiempo de procesamiento en CPU) 0.0000000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000 s
+	CPU/Wall   0.0000000000 % 
+
+Ordenar 100000 numeros con el método 6:
+	Formato exponencial:
+	Real (Tiempo total)  3.7779808044e-03 s
+	User (Tiempo de procesamiento en CPU) 4.0000000000e-03 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+	CPU/Wall   105.8766628802 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  0.0037779808 s
+	User (Tiempo de procesamiento en CPU) 0.0040000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000 s
+	CPU/Wall   105.8766628802 % 
+
+Ordenar 200000 numeros con el método 6:
+	Formato exponencial:
+	Real (Tiempo total)  6.6459178925e-03 s
+	User (Tiempo de procesamiento en CPU) 4.0000000000e-03 s
+	Sys (Tiempo en acciónes de E/S)  4.0000000000e-03 s
+	CPU/Wall   120.3746439462 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  0.0066459179 s
+	User (Tiempo de procesamiento en CPU) 0.0040000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0040000000 s
+	CPU/Wall   120.3746439462 % 
+
+Ordenar 400000 numeros con el método 6:
+	Formato exponencial:
+	Real (Tiempo total)  1.3368844986e-02 s
+	User (Tiempo de procesamiento en CPU) 1.2000000000e-02 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+	CPU/Wall   89.7609330694 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  0.0133688450 s
+	User (Tiempo de procesamiento en CPU) 0.0120000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000 s
+	CPU/Wall   89.7609330694 % 
+
+Ordenar 600000 numeros con el método 6:
+	Formato exponencial:
+	Real (Tiempo total)  1.9794940948e-02 s
+	User (Tiempo de procesamiento en CPU) 1.6000000000e-02 s
+	Sys (Tiempo en acciónes de E/S)  4.0000000000e-03 s
+	CPU/Wall   101.0359164599 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  0.0197949409 s
+	User (Tiempo de procesamiento en CPU) 0.0160000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0040000000 s
+	CPU/Wall   101.0359164599 % 
+
+Ordenar 800000 numeros con el método 6:
+	Formato exponencial:
+	Real (Tiempo total)  2.8655052185e-02 s
+	User (Tiempo de procesamiento en CPU) 2.8000000000e-02 s
+	Sys (Tiempo en acciónes de E/S)  4.0000000000e-03 s
+	CPU/Wall   111.6731520618 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  0.0286550522 s
+	User (Tiempo de procesamiento en CPU) 0.0280000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0040000000 s
+	CPU/Wall   111.6731520618 % 
+
+Ordenar 1000000 numeros con el método 6:
+	Formato exponencial:
+	Real (Tiempo total)  3.3067941666e-02 s
+	User (Tiempo de procesamiento en CPU) 2.4000000000e-02 s
+	Sys (Tiempo en acciónes de E/S)  8.0000000000e-03 s
+	CPU/Wall   96.7704622306 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  0.0330679417 s
+	User (Tiempo de procesamiento en CPU) 0.0240000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0080000000 s
+	CPU/Wall   96.7704622306 % 
+
+Ordenar 2000000 numeros con el método 6:
+	Formato exponencial:
+	Real (Tiempo total)  6.5818071365e-02 s
+	User (Tiempo de procesamiento en CPU) 6.4000000000e-02 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+	CPU/Wall   97.2377322403 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  0.0658180714 s
+	User (Tiempo de procesamiento en CPU) 0.0640000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000 s
+	CPU/Wall   97.2377322403 % 
+
+Ordenar 3000000 numeros con el método 6:
+	Formato exponencial:
+	Real (Tiempo total)  9.9241018295e-02 s
+	User (Tiempo de procesamiento en CPU) 1.0000000000e-01 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+	CPU/Wall   100.7647862928 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  0.0992410183 s
+	User (Tiempo de procesamiento en CPU) 0.1000000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0000000000 s
+	CPU/Wall   100.7647862928 % 
+
+Ordenar 4000000 numeros con el método 6:
+	Formato exponencial:
+	Real (Tiempo total)  1.3170194626e-01 s
+	User (Tiempo de procesamiento en CPU) 1.1600000000e-01 s
+	Sys (Tiempo en acciónes de E/S)  1.6000000000e-02 s
+	CPU/Wall   100.2263092915 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  0.1317019463 s
+	User (Tiempo de procesamiento en CPU) 0.1160000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0160000000 s
+	CPU/Wall   100.2263092915 % 
+
+Ordenar 5000000 numeros con el método 6:
+	Formato exponencial:
+	Real (Tiempo total)  1.6426610947e-01 s
+	User (Tiempo de procesamiento en CPU) 1.3200000000e-01 s
+	Sys (Tiempo en acciónes de E/S)  3.2000000000e-02 s
+	CPU/Wall   99.8380009928 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  0.1642661095 s
+	User (Tiempo de procesamiento en CPU) 0.1320000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0320000000 s
+	CPU/Wall   99.8380009928 % 
+
+Ordenar 6000000 numeros con el método 6:
+	Formato exponencial:
+	Real (Tiempo total)  1.9704198837e-01 s
+	User (Tiempo de procesamiento en CPU) 1.8800000000e-01 s
+	Sys (Tiempo en acciónes de E/S)  1.2000000000e-02 s
+	CPU/Wall   101.5012087787 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  0.1970419884 s
+	User (Tiempo de procesamiento en CPU) 0.1880000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0120000000 s
+	CPU/Wall   101.5012087787 % 
+
+Ordenar 7000000 numeros con el método 6:
+	Formato exponencial:
+	Real (Tiempo total)  2.3587107658e-01 s
+	User (Tiempo de procesamiento en CPU) 2.2400000000e-01 s
+	Sys (Tiempo en acciónes de E/S)  1.2000000000e-02 s
+	CPU/Wall   100.0546584253 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  0.2358710766 s
+	User (Tiempo de procesamiento en CPU) 0.2240000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0120000000 s
+	CPU/Wall   100.0546584253 % 
+
+Ordenar 8000000 numeros con el método 6:
+	Formato exponencial:
+	Real (Tiempo total)  2.6329803467e-01 s
+	User (Tiempo de procesamiento en CPU) 2.0000000000e-01 s
+	Sys (Tiempo en acciónes de E/S)  6.4000000000e-02 s
+	CPU/Wall   100.2666048506 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  0.2632980347 s
+	User (Tiempo de procesamiento en CPU) 0.2000000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0640000000 s
+	CPU/Wall   100.2666048506 % 
+
+Ordenar 9000000 numeros con el método 6:
+	Formato exponencial:
+	Real (Tiempo total)  2.9578113556e-01 s
+	User (Tiempo de procesamiento en CPU) 2.6400000000e-01 s
+	Sys (Tiempo en acciónes de E/S)  3.2000000000e-02 s
+	CPU/Wall   100.0739954022 % 
+
+
+	Formato segundos:
+	Real (Tiempo total)  0.2957811356 s
+	User (Tiempo de procesamiento en CPU) 0.2640000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0320000000 s
+	CPU/Wall   100.0739954022 % 
+
+Ordenar 10000000 numeros con el método 6:
+	Formato exponencial:
+	Real (Tiempo total)  3.2860112190e-01 s
+	User (Tiempo de procesamiento en CPU) 2.9600000000e-01 s
+	Sys (Tiempo en acciónes de E/S)  3.2000000000e-02 s
+	CPU/Wall   99.8170663877 % 
+
+
 
 
