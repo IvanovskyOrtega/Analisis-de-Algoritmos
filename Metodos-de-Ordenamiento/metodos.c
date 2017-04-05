@@ -2,35 +2,55 @@
 #include <stdlib.h>
 #include "metodos.h"
 #include "arbol.h"
+#include "tiempo.h"
 
 int *
 opcion ( int* A, int n, int op )
 {
+	double utime0;
+	double stime0;
+	double wtime0;
+	double utime1;
+	double stime1;
+	double wtime1;
 	switch( op )
 	{
 		case 1:
+			uswtime(&utime0, &stime0, &wtime0);
 			A = burbuja( A , n);
+			uswtime(&utime1, &stime1, &wtime1);
 			return A;
 		case 2:
+			uswtime(&utime0, &stime0, &wtime0);
 			A = burbuja_Mejorada( A , n );
+			uswtime(&utime1, &stime1, &wtime1);
 			return A;
 		case 3:
+			uswtime(&utime0, &stime0, &wtime0);
 			A = insercion( A , n );
+			uswtime(&utime1, &stime1, &wtime1);
 			return A;
 		case 4:
+			uswtime(&utime0, &stime0, &wtime0);
 			A = seleccion( A , n );
+			uswtime(&utime1, &stime1, &wtime1);
 			return A;
 		case 5:
+			uswtime(&utime0, &stime0, &wtime0);
 			A = shell( A , n );
+			uswtime(&utime1, &stime1, &wtime1);
 			return A;
 		case 6:
+			uswtime(&utime0, &stime0, &wtime0);
 			A = aBB( A , n );
+			uswtime(&utime1, &stime1, &wtime1);
 			return A;
 		default:
 			printf("\nOpcion invalida :(\n");
 			return A;
 
 	}
+	imprimirResultados( utime0, stime0, wtime0, utime1, stime1, wtime1, n, A, op );
 }
 
 int *
