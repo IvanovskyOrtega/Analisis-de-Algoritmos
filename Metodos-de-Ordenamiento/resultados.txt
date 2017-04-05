@@ -1145,6 +1145,10 @@ Ordenar 10000000 numeros con el método 6:
 	Sys (Tiempo en acciónes de E/S)  3.2000000000e-02 s
 	CPU/Wall   99.8170663877 % 
 
-
+	Formato segundos:
+	Real (Tiempo total)  0.3286011219 s
+	User (Tiempo de procesamiento en CPU) 0.2960000000 s
+	Sys (Tiempo en acciónes de E/S)  0.0320000000 s
+	CPU/Wall   99.8170663877 %
 
 
