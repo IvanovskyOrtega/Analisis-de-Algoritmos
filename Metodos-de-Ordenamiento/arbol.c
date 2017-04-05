@@ -62,7 +62,6 @@ insertar (struct nodo **Raiz, int miDato1)
   aux = Raiz;
   if (*Raiz == NULL)
     {
-      printf ("creo nodo\n");
       *Raiz = nuevoNodo (miDato1);
     }
   else
