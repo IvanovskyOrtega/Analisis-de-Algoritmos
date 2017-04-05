@@ -7,12 +7,6 @@
 int
 main( void )
 {
-	double utime0;
-	double stime0;
-	double wtime0;
-	double utime1;
-	double stime1;
-	double wtime1;
 	int n;
 	int tam;
 	int i=0;
@@ -21,7 +15,6 @@ main( void )
 	system("clear");
 	printf("\nIngresa la cantidad de números a ordenar:");
 	scanf("%d",&n);
-	tam = n;
 	A = (int*)malloc(n*sizeof(int));
 	FILE* numeros = fopen("numeros10millones.txt", "r");
 	while (feof(numeros)==0 && i < n)
@@ -34,8 +27,5 @@ main( void )
 	printf("3 -- Insercion\n4 -- Seleccion\n5 -- Shell\n6 -- ABB\n");
 	printf("Selecciona el metdodo que deseas utilizar:\t");
 	scanf("%d",&op);
-	uswtime(&utime0, &stime0, &wtime0);
 	A = opcion(A,n,op);
-	uswtime(&utime1, &stime1, &wtime1);
-	imprimirResultados( utime0, stime0, wtime0, utime1, stime1, wtime1, tam, A, op );
 }
