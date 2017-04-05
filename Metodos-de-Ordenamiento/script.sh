@@ -3,8 +3,8 @@
 echo Ejecutando script...
 for i in `seq 1 120`;
 do
-   ./op
    ./a.out < opciones.txt
+   ./op
+   
 done
-./op
 echo Terminamos 
