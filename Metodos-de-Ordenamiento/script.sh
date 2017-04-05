@@ -5,6 +5,5 @@ for i in `seq 1 120`;
 do
    ./a.out < opciones.txt
    ./op
-   
 done
 echo Terminamos 
