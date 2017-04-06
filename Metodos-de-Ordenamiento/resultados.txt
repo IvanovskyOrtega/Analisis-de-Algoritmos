@@ -698,12 +698,6 @@ Ordenar 2000000 numeros con el método 4:
 	Sys (Tiempo en acciónes de E/S)  0.0040000000 s
 	CPU/Wall   100.0015073943 % 
 
-	Formato segundos:
-	Real (Tiempo total)  0.3286011219 s
-	User (Tiempo de procesamiento en CPU) 0.2960000000 s
-	Sys (Tiempo en acciónes de E/S)  0.0320000000 s
-	CPU/Wall   99.8170663877 % 
-
 Ordenar 100 numeros con el método 5:
 	Formato exponencial:
 	Real (Tiempo total)  3.2186508179e-05 s
