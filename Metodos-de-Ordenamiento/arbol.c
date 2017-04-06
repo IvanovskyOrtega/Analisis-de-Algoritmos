@@ -65,22 +65,24 @@ insertar (struct nodo **Raiz, int miDato1)
       *Raiz = nuevoNodo (miDato1);
     }
   else
+  {
     while (*aux != NULL)
+    {
+      if (miDato1 < (*aux)->dato)
       {
-	if (miDato1 < (*aux)->dato)
-	  {
-	    aux = &((*aux)->Izq);
-	  }
-	else if (miDato1 > (*aux)->dato)
-	  {
-	    aux = &((*aux)->Der);
-	  }
-	else
-	  {
-	    break;
-	  }
-	*aux = nuevoNodo (miDato1);
+        aux = &((*aux)->Izq);
       }
+      else if (miDato1 > (*aux)->dato)
+      {
+        aux = &((*aux)->Der);
+      }
+      else
+      {
+        break;
+      }
+    }
+    *aux = nuevoNodo (miDato1);
+  }
 }
 
 struct nodo *
