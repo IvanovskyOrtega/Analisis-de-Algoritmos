@@ -176,17 +176,17 @@ imprimirResultados( double utime0, double stime0, double wtime0, double utime1, 
 	FILE* resultados;
 	resultados = fopen("resultados.txt", "a");
 	if(op == 1)
-		fprintf(resultados,"Ordenar %d numeros con el método Burbuja Simple:", n,op);
+		fprintf(resultados,"Ordenar %d numeros con el método Burbuja Simple:", n);
 	else if(op == 2)
-		fprintf(resultados,"Ordenar %d numeros con el método Burbuja Mejorada:", n,op);
+		fprintf(resultados,"Ordenar %d numeros con el método Burbuja Mejorada:", n);
 	else if(op == 3)
-		fprintf(resultados,"Ordenar %d numeros con el método Inserción:", n,op);
+		fprintf(resultados,"Ordenar %d numeros con el método Inserción:", n);
 	else if(op == 4)
-		fprintf(resultados,"Ordenar %d numeros con el método Selección:", n,op);
+		fprintf(resultados,"Ordenar %d numeros con el método Selección:", n);
 	else if(op == 5)
-		fprintf(resultados,"Ordenar %d numeros con el método Shell:", n,op);
+		fprintf(resultados,"Ordenar %d numeros con el método Shell:", n);
 	else if(op == 6)
-		fprintf(resultados,"Ordenar %d numeros con el método por ABB:", n,op);
+		fprintf(resultados,"Ordenar %d numeros con el método por ABB:", n);
 	fprintf(resultados,"\n");
 	fprintf(resultados,"\tFormato exponencial:\n");
 	fprintf(resultados,"\tReal (Tiempo total)  %.10e s\n",  wtime1 - wtime0);
