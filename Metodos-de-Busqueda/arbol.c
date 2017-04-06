@@ -108,24 +108,31 @@ inordenSecuencial(struct nodo *Raiz, int *A)
 void
 insertar (struct nodo **Raiz, int miDato1)
 {
-	struct nodo ** aux=NULL;
-	aux=Raiz;
-  	if (*Raiz == NULL){
-   		*Raiz = nuevoNodo (miDato1);
-  	}
-  	else
-  		while(*aux!=NULL){
-  			if (miDato1 < (*aux)->dato){
-    			aux=&((*aux)->Izq);
-  			}
-  			else if (miDato1 > (*aux)->dato){
-    			aux=&((*aux)->Der);
-  			}
-  			else{
-  				break;
-  			}
-  		*aux=nuevoNodo(miDato1);
-	}
+  struct nodo **aux = NULL;
+  aux = Raiz;
+  if (*Raiz == NULL)
+    {
+      *Raiz = nuevoNodo (miDato1);
+    }
+  else
+  {
+    while (*aux != NULL)
+    {
+      if (miDato1 < (*aux)->dato)
+      {
+        aux = &((*aux)->Izq);
+      }
+      else if (miDato1 > (*aux)->dato)
+      {
+        aux = &((*aux)->Der);
+      }
+      else
+      {
+        break;
+      }
+    }
+    *aux = nuevoNodo (miDato1);
+  }
 }
 
 struct nodo *
