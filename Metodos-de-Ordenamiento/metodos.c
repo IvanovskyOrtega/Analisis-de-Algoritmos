@@ -19,38 +19,43 @@ opcion ( int* A, int n, int op )
 			uswtime(&utime0, &stime0, &wtime0);
 			A = burbuja( A , n);
 			uswtime(&utime1, &stime1, &wtime1);
+			imprimirResultados( utime0, stime0, wtime0, utime1, stime1, wtime1, n, A, op );
 			return A;
 		case 2:
 			uswtime(&utime0, &stime0, &wtime0);
 			A = burbuja_Mejorada( A , n );
 			uswtime(&utime1, &stime1, &wtime1);
+			imprimirResultados( utime0, stime0, wtime0, utime1, stime1, wtime1, n, A, op );
 			return A;
 		case 3:
 			uswtime(&utime0, &stime0, &wtime0);
 			A = insercion( A , n );
 			uswtime(&utime1, &stime1, &wtime1);
+			imprimirResultados( utime0, stime0, wtime0, utime1, stime1, wtime1, n, A, op );
 			return A;
 		case 4:
 			uswtime(&utime0, &stime0, &wtime0);
 			A = seleccion( A , n );
 			uswtime(&utime1, &stime1, &wtime1);
+			imprimirResultados( utime0, stime0, wtime0, utime1, stime1, wtime1, n, A, op );
 			return A;
 		case 5:
 			uswtime(&utime0, &stime0, &wtime0);
 			A = shell( A , n );
 			uswtime(&utime1, &stime1, &wtime1);
+			imprimirResultados( utime0, stime0, wtime0, utime1, stime1, wtime1, n, A, op );
 			return A;
 		case 6:
 			uswtime(&utime0, &stime0, &wtime0);
 			A = aBB( A , n );
 			uswtime(&utime1, &stime1, &wtime1);
+			imprimirResultados( utime0, stime0, wtime0, utime1, stime1, wtime1, n, A, op );
 			return A;
 		default:
 			printf("\nOpcion invalida :(\n");
 			return A;
 
 	}
-	imprimirResultados( utime0, stime0, wtime0, utime1, stime1, wtime1, n, A, op );
 }
 
 int *
@@ -201,11 +206,11 @@ imprimirResultados( double utime0, double stime0, double wtime0, double utime1, 
 	fprintf(resultados,"\tSys (Tiempo en acciónes de E/S)  %.10f s\n",  stime1 - stime0);
 	fprintf(resultados,"\tCPU/Wall   %.10f %% \n",100.0 * (utime1 - utime0 + stime1 - stime0) / (wtime1 - wtime0));
 	fprintf(resultados,"\n");
-	/*
+
 	for( int i = 0 ; i < n  ; i++)
 	{
 		fprintf(resultados, "\t%d)\t%d\n",i+1,A[i]);
 	}
-	*/
+	
 	fclose(resultados);
 }
