@@ -13,7 +13,7 @@ aBB1 ( int* A, int n, int num )
   double utime1;
   double stime1;
   double wtime1;
-  printf("Creando arbol\n");
+  printf("\n\tCreando arbol\n");
   struct nodo *miRaiz;
   miRaiz = (struct nodo *) malloc (sizeof (struct nodo));
   miRaiz = NULL;
@@ -24,7 +24,7 @@ aBB1 ( int* A, int n, int num )
 	  clave = A[i];
 	  insertar (&miRaiz, clave);
     }
-  printf("Se creo el arbol\n");
+  printf("\tSe creo el arbol\n");
   uswtime(&utime0, &stime0, &wtime0);
   a = buscarABB(miRaiz, num );
   uswtime(&utime1, &stime1, &wtime1);
@@ -33,7 +33,7 @@ aBB1 ( int* A, int n, int num )
 }
 
 int
-aBB2 ( int* A, int n, int num )
+aBB2 ( int* A, int n )
 {
   double utime0;
   double stime0;
@@ -46,7 +46,7 @@ aBB2 ( int* A, int n, int num )
                   1295390003, 450057883, 187645041, 1980098116, 152503, 5000,
                   1493283650, 214826, 1843349527, 1360839354, 2109248666,
                   2147470852, 0};
-  printf("Creando arbol\n");
+  printf("\n\tCreando arbol\n");
   struct nodo *miRaiz;
   miRaiz = (struct nodo *) malloc (sizeof (struct nodo));
   miRaiz = NULL;
@@ -57,7 +57,7 @@ aBB2 ( int* A, int n, int num )
 	  clave = A[i];
 	  insertar (&miRaiz, clave);
     }
-  printf("Se creo el arbol\n");
+  printf("\tSe creo el arbol\n");
   for( i = 0 ; i < 20 ; i++ )
   {
     uswtime(&utime0, &stime0, &wtime0);
@@ -66,43 +66,6 @@ aBB2 ( int* A, int n, int num )
     imprimirResultados( utime0, stime0, wtime0, utime1, stime1, wtime1, 3, numeros[i], n, a  );
   }
   return a;
-}
-
-int *
-inordenSecuencial(struct nodo *Raiz, int *A)
-{
-	int i=0;
-	struct nodo *Cur, *Pre;
-	Cur = Raiz;
-	while(Cur != NULL)
-	{
-		if(Cur->Izq == NULL)
-		{
-			A[i] =Cur->dato;
-			Cur= Cur->Der;
-			i++;
-		}
-		else
-		{
-			Pre = Cur->Izq;
-			while(Pre->Der !=NULL && Pre->Der != Cur)
-				Pre = Pre->Der;
-
-			if (Pre->Der == NULL)
-			{
-				Pre->Der = Cur;
-				Cur = Cur->Izq;
-			}
-			else
-			{
-				Pre->Der = NULL;
-				A[i] =Cur->dato;
-				Cur = Cur->Der;
-				i++;
-			}
-		}
-	}
-	return A;
 }
 
 void
@@ -148,15 +111,15 @@ nuevoNodo (int dato1)
 int
 buscarABB(struct nodo *Raiz, int num)
 {
-    if( Raiz == NULL )
+  if( Raiz == NULL )
     {
         return -1;
     }
-    else if( num == Raiz->dato )
-    {
+  if( num == Raiz->dato )
+   {
         return 0;
-    }
-    else if( num > Raiz->dato )
+   }
+   if( num > Raiz->dato )
     {
 	     return buscarABB( Raiz->Der, num );
     }
@@ -164,5 +127,5 @@ buscarABB(struct nodo *Raiz, int num)
     {
         return buscarABB( Raiz->Izq, num );
     }
-    return -1;
+return -1;
 }
