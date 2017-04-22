@@ -28,7 +28,7 @@ aBB1 ( int* A, int n, int num )
   uswtime(&utime0, &stime0, &wtime0);
   a = buscarABB(miRaiz, num );
   uswtime(&utime1, &stime1, &wtime1);
-  imprimirResultados( utime0, stime0, wtime0, utime1, stime1, wtime1, 3, num, n, a  );
+  imprimirResultados( utime0, stime0, wtime0, utime1, stime1, wtime1, 4, num, n, a  );
   return a;
 }
 
