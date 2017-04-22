@@ -68,11 +68,11 @@ leerNumeros( int* A, int n , int op )
   FILE *numeros;                                             //Puntero a archivo
   if( op == 3 || op == 4 )                                   //Para los metodos que usan el ABB, se utiliza el archivo de números desordenados
   {
-    numeros = fopen( "numeros10millones.txt" , "r" );  //Se abre el archivo de números ordenados
+    numeros = fopen( "numeros10millones.txt" , "r" );  //Se abre el archivo de números desordenados
   }
   else
   {
-    numeros = fopen( "10millones.txt" , "r" );         //Se abre el archivo de números desordenados
+    numeros = fopen( "10millones.txt" , "r" );         //Se abre el archivo de números ordenados
   }
 	while ( feof( numeros ) == 0 && i < n )                    //Leer hasta llegar al final del archivo
 	{
