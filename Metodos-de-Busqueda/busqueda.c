@@ -136,6 +136,8 @@ busqueda(int n, int op, int num)
       else
         printf("\n\tNo se encontro el numero.\n");
       break;
+    default:		//Opcion no valida
+      printf ("\n\t\tOpcion invalida\n");
   }
 }
 
