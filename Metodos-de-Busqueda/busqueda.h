@@ -2,6 +2,10 @@
 #define _BUSQUEDA_H_
 
 void
+obtenerEntradas();
+void
+leerNumeros( int* A, int n , int op );
+void
 busqueda();
 int
 busquedaLineal( int* A, int n, int num );
