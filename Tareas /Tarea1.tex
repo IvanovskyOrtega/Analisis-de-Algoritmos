@@ -315,5 +315,71 @@ fin Procedimiento
 \end{lstlisting}
 \justify
 \textbf{\textit{Sol:}}
-Para el análisis de este algoritmo
+El análisis de este algoritmo resulta un poco más complejo debido a que depende mucho de la manera en que se realizan los saltos. En esta ocasión se realizará el análisis sobre el mejor caso, es decir donde el arreglo esta ordenado.
+\newline
+Haciendo esa acotación podemos ver que si el arreglo está ordenado, la condición del ciclo \textit{while} mas anidado, nunca se ejecutará, de tal forma que el número de operaciones estará dado por el ciclo \textit{for}, para la primera iteración serán $\frac{n+1}{2}$ veces, para la seguna $\frac{3(n+1)}{4}$, para la tercera $\frac{7(n+1)}{8}$ y así sucesivamente. Visto de otra forma podemos hacer $n-\frac{n+1}{2}$ para la primera iteración, para la segunda $n-\frac{n+1}{3}$, para la tercera $n-\frac{n+1}{3}$. Lo anterior puede representarse mediante la siguiente expresión:
+\[\sum_{i=1}^{m}n-\sum_{i=1}^{m}\frac{1}{2^{i}}(n-1)\]
+Conociendo la serie geométrica, la segunda sumatoria puede cambiarse, teniendo así la siguiente expresión:
+\[\sum_{i=1}^{m}n-\sum_{i=0}^{m-1}(\frac{1}{2})\frac{1}{2^{i}}(n-1)\]
+Del resultado de la serie geométrica, suponiendo que $m\to\infty$ obtenemos así la siguiente expresión:
+\[ mn - (n-1) \]
+Donde $m$ representa la cantidad de veces que el arreglo de tamaño $n$ puede dividirse sucesivamente en dos, es decir $log_{2}n$.
+\newline
+Reduciendo la expresión y haciendo un cambio de variable $m-1=b$, tenemos lo siguiente:
+\[ \sum_{i=1}^{m}n-\sum_{i=1}^{m}\frac{1}{2^{i}}(n-1) = bn + 2 \]
+Finalmente, es fácil ver que para el primer ciclo \textit{while} tendremos que se ejecutará $log_{2}n$ veces. Así finalmente la función de complejidad temporal:
+\[f_{t}(n) = (bn + 2)\log_{2}(n)\]
+Donde $b = log_{2}n - 1$.
+\newline
+Encontrando una cota para esta función, como en los algoritmos anteriores, sean $g(n)=n\log_{2}(n)$, $c=6$ y $n_{0}=2$\newline
+Si n=2,
+\center$f(2)=(\log_{2}(2)-1)\log_{2}(2)=0\leq12=6(2)\log_{2}(2)=g(2)$
+\justify
+Si n=3,
+\center$f(3)=(\log_{2}(3)-1)\log_{2}(3)=0.927\leq28.52=6(2)\log_{2}(2)=g(3)$
+\justify
+Si n=4,
+\center$f(4)=(\log_{2}(2)-1)\log_{2}(2)=2\leq48=6(4)\log_{2}(4)=g(4)$
+\justify
+En general, se cumple que
+\center$|f(n)|\leq c|g(n)|$ , $\forall n\geq n_{0}$.
+\justify
+De lo que podemos decir que $f_{t}(n)$ es de orden $O(n\log_{2}(n))$.
+\newline 
+Por otro lado, para el analisis de complejidad espacial, tenemos lo siguiente:
+\begin{lstlisting}
+Procedimiento Shell(A,n)
+	k = n / 2;												// 1 variable k
+	mientras k >= 1 hacer
+		para i=k hasta i>=n hacer				// 1 variable i
+			v = A[i]											// 1 variable v
+			j = i - k;										// 1 variable j
+			mientras j >= 0 && A[j] > v hacer
+				A[j + k] = A[j];						// n variables de A
+				j -= k;
+			fin mientras
+			A[j + k] = v;
+		fin para
+	k/=2;
+	fin mientras
+fin Procedimiento
+\end{lstlisting}
+Siendo entonces la función de complejidad espacial:
+\[f_{e}(n)=n+4\]
+De lo que, si tomamos $g(n)=n$, $c=5$ y $n_{0}=1$
+\newline
+Si n=1,
+\center$f(1)=1+4=5\leq 5=5(1)=g(1)$
+\justify
+Si n=2,
+\center$f(2)=2+5=7\leq 10=5(2)=g(2)$
+\justify
+Si n=3,
+\center$f(3)=3+5=8\leq 15=5(3)=g(3)$
+\justify
+En general, se cumple que
+\center$|f(n)|\leq c|g(n)|$ , $\forall n\geq n_{0}$.
+\justify
+De lo que podemos decir que $f_{e}(n)$ es de orden $O(n)$.
+\newpage
 \end{document}
