@@ -18,17 +18,15 @@
 int *
 aBB (int* A, int n)
 {
-  struct nodo *miRaiz;
-  miRaiz = (struct nodo *) malloc (sizeof (struct nodo));
-  miRaiz = NULL;
-  int clave;
+  struct nodo *miRaiz; // Declaramos la variable raíz de tipo struct nodo*
+  miRaiz = (struct nodo *) malloc (sizeof (struct nodo)); // Reservamos la memoria suficiente para la variable
+  miRaiz = NULL;  // Inicializamos la raiz en NULL	
   for( int i = 0 ; i < n ; i++ )
     {
-	  clave = A[i];
-	  insertar (&miRaiz, clave);
+	  insertar (&miRaiz, A[i]); // Se insertan los elementos del arreglo en el árbol
     }
-  A = inordenSecuencial (miRaiz, A);
-  return A;
+  A = inordenSecuencial (miRaiz, A); // Se realiza el recorrido inorden del árbol para ordenar el arreglo
+  return A; // Regresamos el arreglo ordenado
 }
 
 /**
