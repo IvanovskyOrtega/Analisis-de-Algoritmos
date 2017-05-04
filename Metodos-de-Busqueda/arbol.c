@@ -17,8 +17,8 @@
  * Posibles errores:
  * 	Falta de memoria para la creación del árbol (no reportado durante
  *	las pruebas hechas).
- */  * /
-  int
+ */
+int
 aBB1 (int *A, int n, int num)
 {
   double utime0;		// Variables usadas para la medición de tiempo
@@ -56,8 +56,8 @@ aBB1 (int *A, int n, int num)
  * Posibles errores:
  * 	Falta de memoria para la creación del árbol (no reportado durante
  *	las pruebas hechas).
- */ */
-  int
+ */
+int
 aBB2 (int *A, int n)
 {
   double utime0;		// Variables usadas en la medición de tiempos
@@ -103,8 +103,8 @@ aBB2 (int *A, int n)
  * Posibles errores:
  *   Falta de memoria para la creación del nodo (no reportado durante
  *   las pruebas hechas).
- */ */
-  void
+ */
+void
 insertar (struct nodo **Raiz, int miDato1)
 {
   struct nodo **aux = NULL;	// Creamos un nodo auxiliar
@@ -139,7 +139,7 @@ insertar (struct nodo **Raiz, int miDato1)
  * Posibles errores:
  *   Falta de memoria para la creación del nodo (no se presentó
  *   durante la ejecución de las pruebas).
- */ */
+ */
 struct nodo *
 nuevoNodo (int dato1)
 {
@@ -159,8 +159,8 @@ nuevoNodo (int dato1)
  * Posibles errores:
  * 	Que el árbol no se haya creado correctamente (no reportado
  * 	durante las pruebas.)
- */ */
-  int
+ */
+int
 buscarABB (struct nodo *Raiz, int num)
 {
   if (Raiz == NULL)		// Si no hay elementos en el arreglo
