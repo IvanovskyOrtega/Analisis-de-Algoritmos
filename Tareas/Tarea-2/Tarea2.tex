@@ -1,5 +1,9 @@
-\documentclass[12pt, letterpaper, twoside]{article}
+\documentclass[12pt, letterpaper, oneside]{article}
 \usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{titling}
+\usepackage{titlepic}
+\graphicspath{ {/home/ivanovsky/Documents/images/}} 
 \usepackage{amsthm}
 \usepackage{amssymb}
 \usepackage{gauss}
@@ -7,6 +11,8 @@
 \usepackage{listings}
 \usepackage{color}
 \usepackage{inconsolata}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
 \definecolor{gris}{rgb}{0.4,0.4,0.4}
 \definecolor{verde}{rgb}{0,0.8,0.6}
 \definecolor{anaranjado}{rgb}{1.0,0.4,0}
@@ -26,23 +32,48 @@ tabsize=2
   \strut\vrule
   \hspace{-\arraycolsep}%
 }
+
+\rhead{
+\small
+\textbf{Grupo:} 3CM2
+\newline
+\textbf{Ejercicio:} Análisis de algoritmos recursivos
+}
+\lhead{
+\small
+\textbf{Alumno:} Ortega Victoriano Ivan
+\newline
+\textbf{Materia:} Análisis de Algoritmos
+}
  
 \title{\textbf{Instituto Politécnico Nacional
-			\vspace{10mm}	 \ \newline	
-			Escuela Superior de Cómputo}
-			\vspace{10mm}	 \ \newline	
-			Análisis de Algoritmos
-			\vspace{10mm}	 \ \newline	
-			Profesor: Edgardo Adrián Franco Martínez}
+		\vspace{10mm}	 \ \newline	
+		Escuela Superior de Cómputo}
+		\vspace{10mm}	 \ \newline	
+		Análisis de Algoritmos
+		\vspace{10mm}	 \ \newline	
+		Profesor: Edgardo Adrián Franco Martínez}
 \author{Alumno: Ortega Victoriano Ivan}
-\date{Fecha: 24 de Marzo 2017}
- 
+\date{Fecha: 17 de Mayo 2017}
+% Definition of \maketitle
+\makeatletter         
+\def\@maketitle{
+\raggedright
+\begin{center}
+{\Large \@title }\\[4ex] 
+{\Large  \@author}\\[4ex] 
+\includegraphics[width = 3in]{foto}
+\newline
+\@date\\[8ex]
+\end{center}}
+\makeatother
+
 \begin{document}
-\begin{titlepage}
 \maketitle
-\end{titlepage}
+\newpage
 \justify
-\textbf{Análisis de algoritmos recursivos.}\newline
+\textbf{Análisis de algoritmos recursivos.}
+\newline
 \textbf{Ejercicio 1:} Calcular la complejidad para el siguiente algoritmo. 
 \begin{lstlisting}
 #include <stdio.h>
@@ -61,7 +92,7 @@ int FuncionRecursiva(int num )
   }
   else
     return FuncionRecursiva( num - 1 )*
-    FuncionRecursiva(num - 2)/FuncionRecursiva(num - 3);
+    	FuncionRecursiva(num - 2)/FuncionRecursiva(num - 3);
 }
 \end{lstlisting}
 \justify
@@ -89,7 +120,7 @@ Que son raíces distintas, así:
 Dado que tenemos dos números complejos, de acuerdo con sus propiedades, la ecuación puede reescribirse de la siguiente manera:
 \[T(n)=c_{1}(1.84)^{n}+c_{2}(0.73^{n}(\cos(124.68)+i\sin(124.68)))\]
 \[+c_{3}(0.73^{n}(\cos(124.68n)-i\sin(124.68n)))+c_{4}2^{n}\]
-Luego
+Donde $0.73$ y $124.68$ representan la magnitud del vector y su ángulo respectivamente. Luego
 \[T(n)=c_{1}(1.84)^{n}+0.73^{n}((c_{2}+c_{3})\cos(124.68n)+(c_{2}-c_{3})i\sin(124.68n)))+c_{4}2^{n}\]
 Llamemos $k_{1}=c_{2}+c_{3}$ y $k_{2}=(c_{2}-c_{3})i$, así
 \[T(n)=c_{1}(1.84)^{n}+0.73^{n}(k_{1}\cos(124.68n)+k_{2}\sin(124.68n)))+c_{4}2^{n}\]
@@ -98,45 +129,45 @@ Evaluando las condiciones iniciales
 \[T(1)=1.84c_{1}-0.41k_{1}+0.60k_{2}+2c_{4}\]
 \[T(2)=3.38c_{1}-0.18k_{1}-0.49k_{2}+4c_{4}\]
 Como $T(3) = T(2) + T(1) + T(0) + 2$ entonces:
-\[1+5+9+2 = 6.22c_{1}+0.41k_{1}+0.11k_{2}+7c_{4}+2\]
+\[1+5+9+2=6.22c_{1}+0.37k_{1}+0.09k_{2}+8c_{4}\]
 Luego
 \[1=c_{1}+k_{1}+c_{4}\]
 \[5=1.84c_{1}-0.41k_{1}+0.60k_{2}+2c_{4}\]
 \[9=3.38c_{1}-0.18k_{1}-0.49k_{2}+4c_{4}\]
-\[15=6.22c_{1}+0.41k_{1}+0.11k_{2}+7c_{4}\]
+\[17=6.22c_{1}+0.37k_{1}+0.09k_{2}+8c_{4}\]
 \justify
 Que es el sistema de ecuaciones resultante de la evaluacion de las condiciones iniciales. 
 \newline
 Pasando este sistema a la matriz aumentada, tenemos:
-\begin{align} 
+\begin{align*} 
     \begin{gmatrix}[p] 
         1    &    1  &  0    & 1 & \mline & 1 \\
         1.84 & -0.41 &  0.60 & 2 & \mline & 5 \\
         3.38 & -0.18 & -0.49 & 4 & \mline & 9 \\
-        6.22 &  0.41 &  0.11 & 7 & \mline & 15
+        6.22 &  0.37 &  0.09 & 8 & \mline & 17
     \end{gmatrix} 
-\end{align}
+\end{align*}
 Resolviendo la matriz por Gauss-Jordan, se llega a la solución:
-\begin{align} 
+\begin{align*} 
     \begin{gmatrix}[p] 
-        1 & 0 & 0 & 0 & \mline & -1.581 \\
-        0 & 1 & 0 & 0 & \mline & -1.018 \\
-        0 & 0 & 1 & 0 & \mline &  0.486 \\
-        0 & 0 & 0 & 1 & \mline &  3.6
+        1 & 0 & 0 & 0 & \mline &  0.296 \\
+        0 & 1 & 0 & 0 & \mline & -1.247 \\
+        0 & 0 & 1 & 0 & \mline &  0.066 \\
+        0 & 0 & 0 & 1 & \mline &  1.951
     \end{gmatrix} 
-\end{align}
+\end{align*}
 Que es equivalente a que
-\[c_{1}=-1.581\]
-\[k_{1}=-1.018\]
-\[k_{2}=0.486\]
-\[c_{4}=3.6\]
+\[c_{1}=0.296\]
+\[k_{1}=-1.247\]
+\[k_{2}=0.066\]
+\[c_{4}=1.951\]
 \center
-$\therefore T(n) = -1.581(1.84)^{n}+0.73^{n}[(0.486)\sin(n\theta)-(1.018)\cos(n\theta)]+(3.6)2^{n}$
+$\therefore T(n) = 0.296(1.84)^{n}+0.73^{n}[(0.066)\sin(n\theta)-(1.247)\cos(n\theta)]+(1.951)2^{n}$
 En donde $\theta = 124.68$
 \vspace{10mm}
 \newline
 \justify
-\textbf{Comentario:} Al parecer hay unos cuantos errores en cuanto a lo que hace el algoritmo, de hecho, en la parte donde $n < 3$, al hacer a $resultado = 0$, este valor nunca va a cambiar, ya que en el loop \textit{for} se hace la operación $resultado*=num$, pero como $resultado = 0$, siempre va a retornar un valor de cero. De lo que a partir de un $ n > 3$ va a haber divisiones entre 0, lo cual será un error en el programa. 
+\textbf{Comentario:} Al parecer hay unos cuantos errores en cuanto a lo que hace el algoritmo, de hecho, en la parte donde $n < 3$, al hacer a $resultado = 0$, este valor nunca va a cambiar, ya que en el loop \textit{for} se hace la operación $resultado*=num$, pero como $resultado=0$, siempre va a retornar un valor de cero. De lo que a partir de un $ n > 3$ va a haber divisiones entre 0, lo cual será un error en el programa. 
 \newpage
 \textbf{Ejercicio 2:} Calcular la complejidad de la implementación recursiva del termino n de la serie de Tribonacci (0, 1, 1, 2, 4, 7, 13, 24, 44, 81, 149, 274, 504, 927, 1705, ...)
 \begin{lstlisting}
@@ -155,7 +186,7 @@ int Tribonacci( int num )
 \end{lstlisting}
 \justify
 \textbf{\textit{Sol:}}
-Si nos damos cuenta, el análisis es similar al caso anterior, solo hay ligeras modificaciones en cuanto a las conidiciones iniciales y a la ecuacion en recurrencia.
+Si nos damos cuenta, el análisis es similar al caso anterior, solo hay ligeras modificaciones en cuanto a las condiciones iniciales y a la ecuacion en recurrencia.
 \newline
 Es evidente que $T(0) = 1$, $T(1) = T(2) = 2$, ya que son las comparaciones que se hacen al entrar a la función.
 \newline
@@ -163,7 +194,7 @@ Ahora para un $n$ en general:
 \[T(n) = T(n-1)+T(n-2)+T(n-3)+4\]
 Donde el 4 resulta de las dos comparaciones de la función, mas el costo de las 2 sumas.
 \newline
-Que avanzando un poco más (ya que el análisis es exactamente igual al del ejercicio anterior), la ecuación característica quedaría de la siguiente manera:
+Avanzando un poco más (ya que el análisis es exactamente igual al del ejercicio anterior), la ecuación característica quedaría de la siguiente manera:
 \[(x^{3}-x^{2}-x-1)(x-4)=0\]
 Donde nuestras raíces ahora son:
 \[r_{1}=1.84\]
@@ -175,58 +206,224 @@ Siguiendo el análisis del algoritmo anterior, llegaremos a que la complejidad d
 Resolviendo las condiciones iniciales:
 \[T(0)=c_{1}+k_{1}+c_{4}\]
 \[T(1)=1.84c_{1}-0.41k_{1}+0.60k_{2}+4c_{4}\]
-\[T(2)=3.38c_{1}-0.18k_{1}-0.49k_{2}+8c_{4}\]
+\[T(2)=3.38c_{1}-0.18k_{1}-0.49k_{2}+16c_{4}\]
 Como $T(3) = T(2) + T(1) + T(0) + 4$ entonces:
-\[1+2+2+4 = 6.22c_{1}+0.41k_{1}+0.11k_{2}+13c_{4}+4\]
+\[1+2+2+4 = 6.22c_{1}+0.37k_{1}+0.09k_{2}+32c_{4}\]
 Luego
 \[1=c_{1}+k_{1}+c_{4}\]
 \[2=1.84c_{1}-0.41k_{1}+0.60k_{2}+4c_{4}\]
-\[2=3.38c_{1}-0.18k_{1}-0.49k_{2}+8c_{4}\]
-\[5=6.22c_{1}+0.41k_{1}+0.11k_{2}+13c_{4}\]
+\[2=3.38c_{1}-0.18k_{1}-0.49k_{2}+16c_{4}\]
+\[9=6.22c_{1}+0.37k_{1}+0.09k_{2}+32c_{4}\]
 Pasando este sistema a la matriz aumentada, tenemos:
-\begin{align} 
+\begin{align*} 
     \begin{gmatrix}[p] 
         1    &    1  &  0    &  1 & \mline & 1 \\
         1.84 & -0.41 &  0.60 &  4 & \mline & 2 \\
-        3.38 & -0.18 & -0.49 &  8 & \mline & 2 \\
-        6.22 &  0.41 &  0.11 & 13 & \mline & 5
+        3.38 & -0.18 & -0.49 & 16 & \mline & 2 \\
+        6.22 &  0.37 &  0.09 & 32 & \mline & 9
     \end{gmatrix} 
-\end{align}
+\end{align*}
 Resolviendo la matriz por Gauss-Jordan, se llega a la solución:
-\begin{align} 
+\begin{align*} 
     \begin{gmatrix}[p] 
-        1 & 0 & 0 & 0 & \mline & 1.679 \\
-        0 & 1 & 0 & 0 & \mline & 0.120 \\
-        0 & 0 & 1 & 0 & \mline & 0.930 \\
-        0 & 0 & 0 & 1 & \mline &  -0.8
+        1 & 0 & 0 & 0 & \mline & -0.604 \\
+        0 & 1 & 0 & 0 & \mline &  1.229 \\
+        0 & 0 & 1 & 0 & \mline &  3.529 \\
+        0 & 0 & 0 & 1 & \mline &  0.374
     \end{gmatrix} 
-\end{align}
+\end{align*}
 Que es equivalente a que
-\[c_{1}=1.679\]
-\[k_{1}=0.120\]
-\[k_{2}=0.930\]
-\[c_{4}=-0.8\]
+\[c_{1}=-0.604\]
+\[k_{1}=1.229\]
+\[k_{2}=3.529\]
+\[c_{4}=0.374\]
 \center
-$\therefore T(n) = 1.679(1.84)^{n}+0.73^{n}[(0.120)\cos(n\theta)+(0.930)\sin(n\theta)]-(0.8)2^{n}$
+$\therefore T(n) = -0.604(1.84)^{n}+0.73^{n}[(1.229)\cos(n\theta)+(3.529)\sin(n\theta)]+(0.374)2^{n}$
 Con $\theta=124.68$
 \newpage
 \justify
 \textbf{Ejercicio 3:} Resolver las siguientes ecuaciones y dar su orden de complejidad:
 \center
-$T(n)=3T(n-1)+4T(n-2)$ si $n > 1$; $T(0)=0$, $T(1)=1$
+1) $T(n)=3T(n-1)+4T(n-2)$ si $n > 1$; $T(0)=0$, $T(1)=1$
 \vspace{10mm}
 \newline
-$T(n)=2T(n-1)-(n+5)3^{n}$ si $n > 0$; $T(0)=0$
+2) $T(n)=2T(n-1)-(n+5)3^{n}$ si $n > 0$; $T(0)=0$
 \vspace{10mm}
 \newline
-$T(n)=3T(n-1)+4T(n-2)+(n+5)2^{n}$ si $n > 1$; $T(0)=0$, $T(1)=100$
+3) $T(n)=3T(n-1)+4T(n-2)+(n+5)2^{n}$ si $n > 1$; $T(0)=0$, $T(1)=100$
 \vspace{10mm}
 \newline
-$T(n)-2T(n-1)=3^{n}$ si $n\geq2$; $T(0)=0$, $T(1)=1$
+4) $T(n)-2T(n-1)=3^{n}$ si $n\geq2$; $T(0)=0$, $T(1)=1$
+\newline
+\justify
+\textbf{1) Sol: } Empezamos reescribiendo la ecuación, teniendo así:
+\[T(n)-3T(n-1)-4T(n-2)=0\]
+Pasando a su ecuación característica, tenemos:
+\[x^{2}-3x-4=0\]
+Luego
+\[(x-4)(x+1)=0\]
+Que es una ecuación en recurrencia homogénea, cuyas raíces son:
+\[r_{1}=4\]
+\[r_{2}=-1\]
+Que son raíces distintas, luego así:
+\[T(n)=c_{1}4^{n}+c_{2}(-1)^{n}\]
+Evaluando las condiciones iniciales, como $T(0)=0$ y $T(1)=1$, entonces
+\[0=c_{1}-c_{2}\]
+\[1=4c_{1}-c_{2}\]
+Resolviendo el sistema de ecuaciones llegamos a que $c_{1}=\frac{1}{5}$ y $c_{2}=-\frac{1}{5}$.
+Luego
+\[T(n)=\frac{1}{5}4^{n}-\frac{1}{5}(-1)^{n}\]
+\center
+$\therefore T(n)=\frac{1}{5}[4^{n}+(-1)^{n+1}]$
+\newpage
+\justify
+\textbf{2) Sol:} Reescribiendo la ecuación, tenemos que:
+\[T(n)-2T(n-1)=3^{n}(n+5)\]
+Que es una ecuación en recurrencia no homogénea con $b=3$ y $d=1$, así entonces, obteniendo su ecuación característica:
+\[(x-2)(x-3)^{2}=0\]
+Teniendo así las raíces $r_{1}=2$ y $r_{2}=r_{3}=3$. Así entonces:
+\[T(n)=c_{1}2^{n}+c_{2}3^{n}+nc_{3}3^{n}\]
+Evaluando las condiciones iniciales, como $T(0)=0$, entonces:
+\[0=c_{1}+c_{2}\]
+Además $T(1)=2T(0)+(1+5)3^{1}=18$, entonces:
+\[18 = 2c_{1}+3c_{2}+3c_{3}\] 
+Para obtener un sistema de ecuaciones de 3x3, evaluemos $T(2)$, donde $T(2)=2T(1)+(2+5)3^{2}=36+63=99$. Luego entonces:
+\[99 = 4c_{1}+9c_{2}+18c_{3}\]
+Teniendo así el siguiente sistema de ecuaciones:
+\[c_{1}+c_{2}=0\]
+\[2c_{1}+3c_{2}+3c_{3}=18\]
+\[4c_{1}+9c_{2}+18c_{3}=99\]
+Así,resolviendo el sistema de ecuaciones, obtenemos que 
+\center
+$c_{1}=-9$, $c_{2}=9$, $c_{3}=3$
+\justify
+Sustituyendo los valores, tendremos que:
+\[T(n)=-9(2^{n})+3^{n+2}+3^{n+1}n\]
+Simplificando la ecuación, tendremos:
+\[T(n)=3^{n+1}(n+3)-9(2^{n})\]
+Que es la complejidad de la ecuación.
+\vspace{10mm}
+\justify
+\textbf{Comentario:} La ecuación original $T(n)=2T(n-1)-(n+5)3^{n}$ se me hizo extraña desde que el signo de el polinomio al que es igual la ecuación, es negativo. De hecho, al seguir el análisis como lo hice en lo que resolví, al evaluar $T(1)$ se obtendrían tiempos negativos. De hecho, se me hizo raro el hecho de que se restaran tiempos en la complejidad, por ello recurrí a cambiar el signo de la ecuación, para obtener resultados que creo yo, son los adecuados.
+\vspace{10mm}
+\newline
+\textbf{3) Sol:} Rescribimos la ecuación original:
+\[T(n)-T(n-1)-4T(n-2)=(n+5)2^{n}\]
+Que es una ecuación en recurrrencia no homogénea. Obteniendo su ecuación característica:
+\[(x^{2}-x-4)(x-2)^{2}=0\]
+Simplificando:
+\[(x+1+\sqrt{5})(x+1-\sqrt{5})(x-2)^{2}=0\]
+Donde las raíces de la ecuación son:
+\[r_{1}=1-\sqrt{5}\]
+\[r_{2}=1+\sqrt{5}\]
+\[r_{3}=r_{4}=2\]
+Donde tenemos 2 raíces iguales, ahora bien:
+\[T(n)=c_{1}(1-\sqrt{5})^{n}+c_{2}(1+\sqrt{5})^{n}+c_{3}2^{n}+c_{4}n2^{n}\]
+Evaluando las condiciones iniciales de la ecuación, tenemos que $T(0)=0$ y $T(1)=100$, entonces:
+\[0=c_{1}+c_{2}+c_{3}\]
+\[100=c_{1}(1-\sqrt{5})+c_{2}(1+\sqrt{5})+2c_{3}+2c_{4}\]
+Para obtener un sistema de ecuaciones de 4x4, como $T(2)=T(1)+4T(0)+(2+5)2^{2}$, además $T(3)=T(2)+4T(1)+(3+5)2^{3}$. Entonces, para $T(2)$:
+\[100+4(0)+28=c_{1}(1-\sqrt{5})^{2}+c_{2}(1+\sqrt{5})^2+4c_{3}+8c_{4}\]
+Luego
+\[128=c_{1}(1-\sqrt{5})^{2}+c_{2}(1+\sqrt{5})^2+4c_{3}+8c_{4}\]
+Para $T(3)$:
+\[128+4(100)+64=c_{1}(1-5\sqrt{5})^{3}+c_{2}(1+1\sqrt{5})^{3}+8c_{3}+12c_{4}\]
+Luego
+\[592=c_{1}(1-5\sqrt{5})^{3}+c_{2}(1+1\sqrt{5})^{3}+8c_{3}+12c_{4}\]
+Teniendo así finalmente nuestro sistema de ecuaciones de 4x4:
+\[0=c_{1}+c_{2}+c_{3}\]
+\[100=c_{1}(1-\sqrt{5})+c_{2}(1+\sqrt{5})+2c_{3}+2c_{4}\]
+\[128=c_{1}(1-\sqrt{5})^{2}+c_{2}(1+\sqrt{5})^2+4c_{3}+8c_{4}\]
+\[592=c_{1}(1-5\sqrt{5})^{3}+c_{2}(1+1\sqrt{5})^{3}+8c_{3}+12c_{4}\]
+De lo cuál pasandolo a su forma matricial, tenemos:
+\begin{align*} 
+    \begin{gmatrix}[p] 
+        1    &    1  &  1    &  0 & \mline & 0 \\
+        (1-\sqrt{5}) & (1+\sqrt{5}) &  2 &  2 & \mline & 100 \\
+        (1-\sqrt{5})^{2} & (1+\sqrt{5})^{2} & 4 &  8 & \mline & 128 \\
+        (1-\sqrt{5})^{3} & (1+\sqrt{5})^{3} &  8 & 12 & \mline & 592
+    \end{gmatrix} 
+\end{align*}
+Aplicando Gauss-Jordan a la matriz, llegamos a que:
+\begin{align*} 
+    \begin{gmatrix}[p] 
+        1 & 0 & 0 & 0 & \mline & \frac{160-134\sqrt{5}}{5} \\
+        0 & 1 & 0 & 0 & \mline & \frac{160+134\sqrt{5}}{5} \\
+        0 & 0 & 1 & 0 & \mline & -64 \\
+        0 & 0 & 0 & 1 & \mline & -52
+    \end{gmatrix} 
+\end{align*} 
+Que es equivalente a decir que:
+\[c_{1}=\frac{160-134\sqrt{5}}{5}\]
+\[c_{2}=\frac{160+134\sqrt{5}}{5}\]
+\[c_{3}=-64\]
+\[c_{4}=-52\]
+Así 
+\[T(n)=(\frac{160-134\sqrt{5}}{5})(1-\sqrt{5})^{n}+(\frac{160+134\sqrt{5}}{5})(1+\sqrt{5})^{n}-64(2^{n})-52n(2^{n})\]
+Finalmente
+\[T(n)=(\frac{160-134\sqrt{5}}{5})(1-\sqrt{5})^{n}+(\frac{160+134\sqrt{5}}{5})(1+\sqrt{5})^{n}-2^{n+6})-52n(2^{n})\]
+\justify
+\textbf{4) Sol:} De la ecuación en recurrencia no homogénea $T(n)-2T(n-1)=3^{n}$ obtenemos su ecuación característica:
+\[(x-2)(x-3)=0\]
+Donde sus raíces son:
+\[r_{1}=2\]
+\[r_{2}=3\]
+Teniendo así que
+\[T(n)=c_{1}2^{n}+c_{2}3^{n}\]
+Evaluando las condiciones iniciales, tenemos que $T(0)=0$ y $T(1)=1$, luego entonces:
+\[0=c_{1}+c_{2}\]
+\[1=2c_{1}+3c_{2}\]
+Resolviendo el sistema de ecuaciones, llegamos a que $c_{1}=-1$ y $c_{2}=1$.
+\vspace{10mm}
+\center
+$\therefore T(n)=3^{n}-2^{n}$ 
 \newpage
 \justify
 \textbf{Ejercicio 4:} Calcular la cota de complejidad del algoritmo de búsqueda binaria recursiva:
+\begin{lstlisting}
+int BusquedaBinaria(int num_buscado, int numeros[], 
+	int inicio, int centro, int final)
+{
+	if (inicio>final)
+		return -1;
+	else if (num_buscado == numeros[centro])
+		return centro;
+	else if (num_buscado < numeros[centro])
+		return BusquedaBinaria(num_buscado,numeros,inicio,
+			(int)((inicio+centro-1)/2),centro-1);
+	else
+		return BusquedaBinaria(num_buscado,numeros,centro+1,
+			(int)((final+centro+1)/2),final);
+}
+\end{lstlisting}
+\textbf{Sol:} Para obtener la ecuación en recurrencia, hay que ver como funciona el algoritmo, es fácil ver que el costo de cada caso base es de 1, sin embargo, para buscar un número que no necesariamente se encuentre a la primera, o que bien, no cumpla las primeras dos condiciones del algoritmo, siempre va a ejecutarlas y va a entrar a alguna de las últimas dos condiciones, donde nuestro arreglo de tamaño $n$ va a ser particionado a la mitad, es decir $n/2$, así hasta que lo encuentre, o no. De lo que podemos decir que su ecuación en recurrencia puede formarse de la siguiente manera:
+\[T(n)=2+T(n/2)\]
+Donde 2 representa los casos base, y $T(n/2)$ representa el costo de la llamada a la función para $n/2$.
+Ahora bien, de acuerdo al teorema maestro, tenemos $a=1$, $b=2$ y $c=0$, dado que se cumple que $a=b^{c}$, entonces diremos que
+\[T(n)=\Theta(n^{c}\log{n})\]
+\center
+$\therefore T(n)=\Theta(\log{n})$
 \newpage
 \justify
 \textbf{Ejercicio 5:} Calcular la cota de complejidad del algoritmo Merge-Sort recursivo:
+\begin{lstlisting}
+Merge-Sort(a, p, r)
+{
+	if ( p < r )
+	{
+		q = parteEntera((p+r)/2);
+		Merge-Sort(a, p, q);
+		Merge-Sort(a, q+1,r);
+		Merge(a, p, q, r);
+	}
+} 
+\end{lstlisting}
+\textbf{Sol: }Para la solución de este problema, nos damos cuenta que por cada recursión, el algoritmo dividirá el arreglo en dos subarreglos de tamaño $n/2$ y que además realizará $n$ divisiones, hasta que las últimas recursiones tengan únicamente un elemento. De lo cuál podemos modelar su ecuación en recurrencia de la siguiente forma:
+\[T(n)=2T(n/2)+n\]
+La cual, al igual que el ejercicio anterior podemos resolver por medio del teorema maestro. Tenemos que $a=2$, $b=2$ y $c=1$, dado que se cumple que $a=b^{c}$, entonces diremos que
+\[T(n)=\Theta(n^{c}\log{n})\]
+\center
+$\therefore T(n)=\Theta(n\log{n})$
 \end{document}
+\grid
+\grid
